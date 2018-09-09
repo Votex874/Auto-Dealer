@@ -1,0 +1,50 @@
+@mixin img($url){
+  width: 70%;
+  height: 70%;
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ddd;
+}
+
+
+.mainContainer{
+    width: 1200px;
+    background-color: blue;
+    height: 600px;
+    margin: 0 auto;
+    .slider{
+      height: 100%;
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .arrow{
+        width: 10%;
+        text-align: center;
+        font-size: 600%;
+        cursor: pointer;
+        &:hover{
+          color: #ddd;
+        }
+      }
+      .audi1{
+        @include img('../imgAudi/1.jpg')
+      }
+      .audi2{
+        @include img('../imgAudi/2.jpg')
+      }
+      .audi3{
+        @include img('../imgAudi/3.jpg')
+      }
+      .audi4{
+        @include img('../imgAudi/4.jpg')
+      }
+      .audi5{
+        @include img('../imgAudi/5.jpg')
+      }
+      .audi6{
+        @include img('../imgAudi/6.jpg')
+      }
+    }
+  }

@@ -1,0 +1,23 @@
+.navContainer {
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  display: flex; }
+  .navContainer .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .navContainer .container .logo {
+      width: 30%;
+      font-size: 260%; }
+    .navContainer .container .navigation {
+      width: 50%;
+      text-align: right; }
+      .navContainer .container .navigation ul li {
+        display: inline-block;
+        margin: 0 20px;
+        font-size: 160%; }
+      .navContainer .container .navigation ul li:nth-of-type(3) {
+        margin-right: 0; }
