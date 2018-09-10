@@ -29,7 +29,7 @@ class SectionOffert extends Component {
     };
 
     handleClickOffert = index => {
-        console.log(index);
+
         let varriable = <Gotowka/>;
         if(index === 1){
             varriable = <Leasing/>;

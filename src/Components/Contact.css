@@ -1,0 +1,160 @@
+.contact {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 600px; }
+  .contact .logo {
+    width: 100%; }
+    .contact .logo div {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .contact .logo div span:nth-of-type(1) {
+        width: 45%; }
+      .contact .logo div span:nth-of-type(2) {
+        text-align: center;
+        width: 55%; }
+  .contact .contactDetails {
+    display: flex;
+    flex-direction: row; }
+    .contact .contactDetails .containerForm {
+      width: 45%; }
+      .contact .contactDetails .containerForm form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .contact .contactDetails .containerForm form label {
+          width: 100%;
+          display: flex;
+          flex-direction: column; }
+          .contact .contactDetails .containerForm form label input {
+            width: 100%;
+            height: 26px;
+            padding-left: 10px;
+            margin: 15px 0;
+            outline: none; }
+          .contact .contactDetails .containerForm form label textarea {
+            padding-left: 10px;
+            width: 100%;
+            height: 164px;
+            outline: none;
+            resize: none; }
+        .contact .contactDetails .containerForm form label:nth-of-type(3) input {
+          width: 40%;
+          margin-left: calc(100% - 70%);
+          border-radius: 10px;
+          outline: none;
+          background-color: #00b386;
+          border: none;
+          color: #fff;
+          letter-spacing: 1px; }
+    .contact .contactDetails .location {
+      width: 55%;
+      height: 350px; }
+      .contact .contactDetails .location .map1 {
+        width: 80%;
+        height: 100%;
+        margin: 34px 0 20px 20%;
+        background-image: url("../imgMap/map1.jpg");
+        background-position: center;
+        background-size: cover;
+        border: 2px solid #00b386;
+        position: relative; }
+        .contact .contactDetails .location .map1 .minus {
+          position: absolute;
+          left: calc(100% - 8%);
+          top: 46px;
+          width: 30px;
+          height: 30px;
+          background-color: rgba(217, 217, 217, 0.4);
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer; }
+          .contact .contactDetails .location .map1 .minus:hover {
+            background-color: rgba(191, 191, 191, 0.4);
+            color: #00b386; }
+        .contact .contactDetails .location .map1 .plus {
+          position: absolute;
+          left: calc(100% - 8%);
+          top: 10px;
+          width: 30px;
+          height: 30px;
+          background-color: rgba(217, 217, 217, 0.4);
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer; }
+          .contact .contactDetails .location .map1 .plus:hover {
+            background-color: rgba(191, 191, 191, 0.4);
+            color: #00b386; }
+      .contact .contactDetails .location .map2 {
+        width: 80%;
+        height: 100%;
+        margin: 34px 0 20px 20%;
+        background-image: url("../imgMap/map2.jpg");
+        background-position: center;
+        background-size: cover;
+        border: 2px solid #00b386;
+        position: relative; }
+        .contact .contactDetails .location .map2 .minus {
+          position: absolute;
+          left: calc(100% - 8%);
+          top: 46px;
+          width: 30px;
+          height: 30px;
+          background-color: rgba(217, 217, 217, 0.4);
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer; }
+          .contact .contactDetails .location .map2 .minus:hover {
+            background-color: rgba(191, 191, 191, 0.4);
+            color: #00b386; }
+        .contact .contactDetails .location .map2 .plus {
+          position: absolute;
+          left: calc(100% - 8%);
+          top: 10px;
+          width: 30px;
+          height: 30px;
+          background-color: rgba(217, 217, 217, 0.4);
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer; }
+          .contact .contactDetails .location .map2 .plus:hover {
+            background-color: rgba(191, 191, 191, 0.4);
+            color: #00b386; }
+      .contact .contactDetails .location .map3 {
+        width: 80%;
+        height: 100%;
+        margin: 34px 0 20px 20%;
+        background-image: url("../imgMap/map3.png");
+        background-position: center;
+        background-size: cover;
+        border: 2px solid #00b386;
+        position: relative; }
+        .contact .contactDetails .location .map3 .minus {
+          position: absolute;
+          left: calc(100% - 8%);
+          top: 46px;
+          width: 30px;
+          height: 30px;
+          background-color: rgba(217, 217, 217, 0.4);
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer; }
+          .contact .contactDetails .location .map3 .minus:hover {
+            background-color: rgba(191, 191, 191, 0.4);
+            color: #00b386; }
+        .contact .contactDetails .location .map3 .plus {
+          position: absolute;
+          left: calc(100% - 8%);
+          top: 10px;
+          width: 30px;
+          height: 30px;
+          background-color: rgba(217, 217, 217, 0.4);
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer; }
+          .contact .contactDetails .location .map3 .plus:hover {
+            background-color: rgba(191, 191, 191, 0.4);
+            color: #00b386; }
