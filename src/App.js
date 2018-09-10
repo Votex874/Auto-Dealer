@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Components/Header';
 import MainContainer from './Components/MainSection';
+import SectionOffert from './Components/SectionOffert';
 
 
 
@@ -12,6 +13,7 @@ class App extends Component {
       <div>
         <Header/>
         <MainContainer/>
+        <SectionOffert/>
       </div>
     );
   }

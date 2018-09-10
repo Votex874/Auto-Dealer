@@ -1,0 +1,27 @@
+.leasing {
+  display: flex;
+  flex-direction: column; }
+  .leasing h3 {
+    margin: 40px 0 40px 20px; }
+  .leasing .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0; }
+    .leasing .info div {
+      width: 30%;
+      margin: 0 20px;
+      line-height: 22px;
+      letter-spacing: 0.7px; }
+      .leasing .info div span {
+        display: block;
+        font-size: 120%;
+        text-align: center; }
+      .leasing .info div button {
+        width: 50%;
+        margin: 20px 0 0 calc(100% - 75%);
+        background-color: #D0D0D0;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 7px 0; }

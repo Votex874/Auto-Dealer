@@ -1,0 +1,30 @@
+.abonament {
+  display: flex;
+  flex-direction: column; }
+  .abonament h3 {
+    margin: 40px 0 40px 20px; }
+  .abonament .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0; }
+    .abonament .info div {
+      width: 30%;
+      margin: 0 20px;
+      line-height: 22px;
+      letter-spacing: 0.7px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .abonament .info div span {
+        display: block;
+        font-size: 120%;
+        text-align: center; }
+      .abonament .info div button {
+        width: 50%;
+        margin: 20px 0 0 calc(100% - 75%);
+        background-color: #D0D0D0;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 7px 0; }

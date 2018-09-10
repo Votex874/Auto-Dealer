@@ -1,0 +1,35 @@
+.containerOfferts {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #D0D0D0;
+  h2{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 40px;
+    letter-spacing: 2px;
+    font-size: 200%;
+  }
+  .offertList{
+    ul{
+      padding-left: 80px;
+      padding-right: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li{
+        width: 20%;
+        text-align: center;
+        list-style: none;
+        padding: 10px 0;
+        font-size: 120%;
+        border: 1px dotted #222;
+        border-radius: 10px;
+        &:hover{
+          color: #C0C0C0;
+          background-color: #222222;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
