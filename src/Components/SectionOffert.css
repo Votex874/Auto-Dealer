@@ -1,37 +1,38 @@
-.containerOfferts {
-  width: 1200px;
-  margin: -27px auto 0 auto;
-  background-color: #CCD1D1;
-  height: 680px;
-  border-bottom: 3px dotted #232323; }
-  .containerOfferts h2 {
-    width: 100%;
-    padding: 50px 0 30px 30px;
-    letter-spacing: 2px;
-    font-size: 200%;
-    position: relative; }
-    .containerOfferts h2:after {
-      content: '';
-      display: block;
-      position: absolute;
-      height: 5px;
-      width: 220px;
-      background-color: #232323;
-      top: 86px; }
-  .containerOfferts .offertList ul {
-    padding-left: 80px;
-    padding-right: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 30px; }
-    .containerOfferts .offertList ul li {
-      width: 20%;
-      text-align: center;
-      list-style: none;
-      padding: 10px 0;
-      font-size: 120%;
-      border-bottom: 2px dotted #222;
-      cursor: pointer; }
-      .containerOfferts .offertList ul li:nth-of-type(3) {
-        margin-right: 20px; }
+.secondSection {
+  background-color: #D5D5D6;
+  border-bottom: 3px dotted #000; }
+  .secondSection .containerOfferts {
+    width: 1200px;
+    margin: -27px auto 0 auto;
+    height: 740px; }
+    .secondSection .containerOfferts h2 {
+      width: 100%;
+      padding: 50px 0 30px 0;
+      letter-spacing: 2px;
+      font-size: 200%;
+      position: relative; }
+      .secondSection .containerOfferts h2:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 220px;
+        background-color: #2E3EFF;
+        top: 86px; }
+    .secondSection .containerOfferts .offertList ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      .secondSection .containerOfferts .offertList ul li {
+        width: 20%;
+        text-align: center;
+        list-style: none;
+        padding: 10px 0;
+        font-size: 120%;
+        border-bottom: 2px dotted white;
+        color: white;
+        cursor: pointer;
+        letter-spacing: 1px; }
+        .secondSection .containerOfferts .offertList ul li:nth-of-type(3) {
+          margin-right: 40px; }

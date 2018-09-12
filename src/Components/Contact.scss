@@ -4,7 +4,7 @@
   background-image: url($url);
   background-position: center;
   background-size: cover;
-  border: 2px solid #00b386;
+  border: 2px solid #2E3EFF;
   position: relative;
   .minus{
     position: absolute;
@@ -18,7 +18,7 @@
     cursor: pointer;
     &:hover{
       background-color: rgba(191, 191, 191, 0.4);
-      color: #00b386;
+      color: #2E3EFF;
     }
   }
   .plus{
@@ -33,101 +33,121 @@
     cursor: pointer;
     &:hover{
       background-color: rgba(191, 191, 191, 0.4);
-      color: #00b386;
+      color: #2E3EFF;
     }
   }
 }
 
-
-.contact {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 550px;
-  background-color: #CCD1D1;
-  .logo {
-    width: 100%;
-    height: 150px;
-    font-size: 150%;
-    margin-left: 10px;
-    span{
-      font-size: 80%;
-      font-weight: bold;
-    }
-    div {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      span:nth-of-type(1) {
-        width: 45%;
-      }
-      span:nth-of-type(2) {
-        text-align: center;
-        width: 55%;
-      }
-    }
-  }
-  .contactDetails {
+.contactSection {
+  background-color: #EFEFF0;
+  .contact {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 400px;
-    .containerForm {
-      width: 42%;
-      height: 100%;
-      form {
+    flex-direction: column;
+    height: 550px;
+    .logo {
+      width: 100%;
+      height: 150px;
+      font-size: 150%;
+      span {
+        font-size: 80%;
+        font-weight: bold;
+      }
+      h2 {
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 5px;
+          width: 160px;
+          background-color: #2E3EFF;
+          top: 44px;
+        }
+      }
+      div {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        label {
+        flex-direction: row;
+        span:nth-of-type(1) {
+          width: 45%;
+        }
+        span:nth-of-type(2) {
+          text-align: center;
+          width: 55%;
+          position: relative;
+          i {
+            position: absolute;
+            top: 3px;
+            font-size: 140%;
+            padding-left: 10px;
+            color: #2E3EFF;
+          }
+        }
+      }
+    }
+    .contactDetails {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 400px;
+      .containerForm {
+        width: 42%;
+        height: 100%;
+        form {
           width: 100%;
           display: flex;
           flex-direction: column;
-          input {
+          justify-content: space-between;
+          label {
             width: 100%;
-            height: 26px;
-            padding-left: 10px;
-            margin: 0 0 15px 0;
-            outline: none;
-            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            input {
+              width: 100%;
+              height: 26px;
+              padding-left: 10px;
+              margin: 0 0 15px 0;
+              outline: none;
+              border: 1px solid #ddd;
+            }
+            textarea {
+              padding-left: 10px;
+              width: 100%;
+              height: 164px;
+              outline: none;
+              resize: none;
+              border: 1px solid #ddd;
+            }
           }
-          textarea {
-            padding-left: 10px;
-            width: 100%;
-            height: 164px;
-            outline: none;
-            resize: none;
-            border: 1px solid #ddd;
+          label:nth-of-type(3) {
+            input {
+              width: 40%;
+              margin-left: calc(100% - 70%);
+              margin-top: 15px;
+              border-radius: 10px;
+              outline: none;
+              background-color: #2E3EFF;
+              border: none;
+              color: #fff;
+              letter-spacing: 1px;
+            }
           }
         }
-        label:nth-of-type(3) {
-          input {
-            width: 40%;
-            margin-left: calc(100% - 70%);
-            margin-top: 15px;
-            border-radius: 10px;
-            outline: none;
-            background-color: #00b386;
-            border: none;
-            color: #fff;
-            letter-spacing: 1px;
-          }
+      }
+      .location {
+        width: 48%;
+        height: 350px;
+        .map1 {
+          @include map('../imgMap/map1.jpg')
         }
-      }
-    }
-    .location{
-      width: 48%;
-      height: 350px;
-      .map1{
-        @include map('../imgMap/map1.jpg')
-      }
-      .map2{
-        @include map('../imgMap/map2.jpg')
-      }
-      .map3{
-        @include map('../imgMap/map3.png')
+        .map2 {
+          @include map('../imgMap/map2.jpg')
+        }
+        .map3 {
+          @include map('../imgMap/map3.png')
+        }
       }
     }
   }

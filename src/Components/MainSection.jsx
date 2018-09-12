@@ -63,20 +63,22 @@ class MainSection extends Component {
 
 
         return (
-                <div className="mainContainer">
-                    <div className="name">
-                        <h4>Oto jeden z naszych najnowszych modeli:  <span>{audiName[count - 1]}</span></h4>
-                    </div>
-                    <div className="slider">
-                        <div className="arrow"
-                            onClick={this.handleLeftArrow}>
-                            <i className="fa fa-angle-left" />
+                <div className='firstSection'>
+                    <div className="mainContainer">
+                        <div className="name">
+                            <h4>Oto jeden z naszych najnowszych modeli:  <span>{audiName[count - 1]}</span></h4>
                         </div>
-                        <div className={classAudi + count}
-                        >
+                        <div className="slider">
+                            <div className="arrow"
+                                onClick={this.handleLeftArrow}>
+                                <i className="fa fa-angle-left" />
+                            </div>
+                            <div className={classAudi + count}
+                            >
+                            </div>
+                            <div className="arrow"
+                                onClick={this.handleRightArrow}><i className="fa fa-angle-right" /></div>
                         </div>
-                        <div className="arrow"
-                            onClick={this.handleRightArrow}><i className="fa fa-angle-right" /></div>
                     </div>
                 </div>
         );

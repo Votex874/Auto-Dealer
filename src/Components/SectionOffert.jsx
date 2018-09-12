@@ -18,7 +18,7 @@ class SectionOffert extends Component {
             indexOffert,
             Gotówka: {
                 color: 'white',
-                borderBottom: '2px dotted white',
+                borderBottom: '2px dotted #white',
             },
             Leasing: {
                 color: '',
@@ -46,48 +46,48 @@ class SectionOffert extends Component {
         if(index === 1){
             this.setState({
                 Leasing:{
+                    color: '#2E3EFF',
+                    borderBottom: '2px dotted #2E3EFF',
+                },
+                Abonament:{
                     color: 'white',
                     borderBottom: '2px dotted white',
                 },
-                Abonament:{
-                    color: '',
-                    borderBottom: '2px dotted #222',
-                },
                 Gotówka: {
-                    color: '',
-                    borderBottom: '2px dotted #222',
+                    color: 'white',
+                    borderBottom: '2px dotted white',
                 },
             });
             varriable = <Leasing/>;
         }else if(index === 2){
             this.setState({
                 Leasing:{
-                    color: '',
-                    borderBottom: '2px dotted #222',
-                },
-                Abonament:{
                     color: 'white',
                     borderBottom: '2px dotted white',
                 },
+                Abonament:{
+                    color: '#2E3EFF',
+                    borderBottom: '2px dotted #2E3EFF',
+                },
                 Gotówka: {
-                    color: '',
-                    borderBottom: '2px dotted #222',
+                    color: 'white',
+                    borderBottom: '2px dotted white',
                 },
             });
             varriable = <Abonament/>;
         }else{
             this.setState({
                 Leasing:{
-                    color: '',
-                    borderBottom: '2px dotted #222',
-                },
-                Abonament:{
-                    color: '',
-                    borderBottom: '2px dotted #222',
-                },
-                Gotówka: {
                     color: 'white',
                     borderBottom: '2px dotted white',
+                },
+                Abonament:{
+                    color: 'white',
+                    borderBottom: '2px dotted white',
+                },
+                Gotówka: {
+                    color: '#2E3EFF',
+                    borderBottom: '2px dotted #2E3EFF',
                 },
             });
             varriable = <Gotowka/>;
@@ -104,15 +104,17 @@ class SectionOffert extends Component {
 
     render() {
         return (
-            <div className='containerOfferts'>
-                <h2>Nasze oferty</h2>
-                <div className="offertList">
-                    <ul>
-                        {this.creatingOfferts()}
-                    </ul>
-                </div>
-                <div className="offertInfo">
-                    {this.state.indexOffert}
+            <div className="secondSection">
+                <div className='containerOfferts'>
+                    <h2>Nasze oferty</h2>
+                    <div className="offertList">
+                        <ul>
+                            {this.creatingOfferts()}
+                        </ul>
+                    </div>
+                    <div className="offertInfo">
+                        {this.state.indexOffert}
+                    </div>
                 </div>
             </div>
         );

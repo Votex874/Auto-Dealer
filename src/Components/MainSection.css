@@ -1,74 +1,76 @@
-.mainContainer {
-  width: 1200px;
-  background-color: #CCD1D1;
-  height: 700px;
-  margin: 0 auto 0 auto;
-  border-bottom: 3px dotted #232323; }
-  .mainContainer .name {
-    font-size: 200%;
-    padding-top: 2px;
-    height: 100px;
-    margin-left: 14.5%;
-    position: relative; }
-    .mainContainer .name:after {
-      content: '';
-      display: block;
-      position: absolute;
-      height: 5px;
-      width: 690px;
-      background-color: #232323;
-      top: 84px; }
-  .mainContainer .slider {
-    height: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .mainContainer .slider .arrow {
-      width: 10%;
-      text-align: center;
-      font-size: 600%;
-      cursor: pointer; }
-      .mainContainer .slider .arrow:hover {
-        color: #ededed; }
-    .mainContainer .slider .audi1 {
-      width: 70%;
-      height: 80%;
-      background-image: url("../imgAudi/1.jpg");
-      background-size: cover;
-      background-position: center;
-      border: 4px solid #232323; }
-    .mainContainer .slider .audi2 {
-      width: 70%;
-      height: 80%;
-      background-image: url("../imgAudi/2.jpg");
-      background-size: cover;
-      background-position: center;
-      border: 4px solid #232323; }
-    .mainContainer .slider .audi3 {
-      width: 70%;
-      height: 80%;
-      background-image: url("../imgAudi/3.jpg");
-      background-size: cover;
-      background-position: center;
-      border: 4px solid #232323; }
-    .mainContainer .slider .audi4 {
-      width: 70%;
-      height: 80%;
-      background-image: url("../imgAudi/4.jpg");
-      background-size: cover;
-      background-position: center;
-      border: 4px solid #232323; }
-    .mainContainer .slider .audi5 {
-      width: 70%;
-      height: 80%;
-      background-image: url("../imgAudi/5.jpg");
-      background-size: cover;
-      background-position: center;
-      border: 4px solid #232323; }
-    .mainContainer .slider .audi6 {
-      width: 70%;
-      height: 80%;
-      background-image: url("../imgAudi/6.jpg");
-      background-size: cover;
-      background-position: center;
-      border: 4px solid #232323; }
+.firstSection {
+  background-color: #EFEFF0;
+  border-bottom: 3px dotted #000; }
+  .firstSection .mainContainer {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto 0 auto; }
+    .firstSection .mainContainer .name {
+      font-size: 200%;
+      padding-top: 2px;
+      height: 100px;
+      margin-left: 14.5%;
+      position: relative; }
+      .firstSection .mainContainer .name:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 690px;
+        background-color: #2E3EFF;
+        top: 84px; }
+    .firstSection .mainContainer .slider {
+      height: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .firstSection .mainContainer .slider .arrow {
+        width: 10%;
+        text-align: center;
+        font-size: 600%;
+        cursor: pointer;
+        color: #2E3EFF; }
+        .firstSection .mainContainer .slider .arrow:hover {
+          color: #232323; }
+      .firstSection .mainContainer .slider .audi1 {
+        width: 70%;
+        height: 80%;
+        background-image: url("../imgAudi/1.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 4px solid #232323; }
+      .firstSection .mainContainer .slider .audi2 {
+        width: 70%;
+        height: 80%;
+        background-image: url("../imgAudi/2.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 4px solid #232323; }
+      .firstSection .mainContainer .slider .audi3 {
+        width: 70%;
+        height: 80%;
+        background-image: url("../imgAudi/3.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 4px solid #232323; }
+      .firstSection .mainContainer .slider .audi4 {
+        width: 70%;
+        height: 80%;
+        background-image: url("../imgAudi/4.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 4px solid #232323; }
+      .firstSection .mainContainer .slider .audi5 {
+        width: 70%;
+        height: 80%;
+        background-image: url("../imgAudi/5.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 4px solid #232323; }
+      .firstSection .mainContainer .slider .audi6 {
+        width: 70%;
+        height: 80%;
+        background-image: url("../imgAudi/6.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 4px solid #232323; }

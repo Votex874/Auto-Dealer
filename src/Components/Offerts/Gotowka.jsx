@@ -13,7 +13,7 @@ class Gotowka extends Component {
                         <p>Dla klientów , którzy chcą kupić auto na własne zapotrzebowanie, Lorem ipsum dolor sit
                             amet, consectetur adipisicing elit. Accusantium aliquid aut corporis dolor error excepturi
                             facere facilis hic illo illum ipsam laboriosam, magnam porro quod saepe veniam veritatis
-                            vero voluptatem.
+                            vero voluptatem.vero voluptatem.
                         </p>
                         <button>Wybieram</button>
                     </div>

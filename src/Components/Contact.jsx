@@ -121,64 +121,68 @@ class Contact extends Component {
             } = this.state;
 
         return (
-            <div className='contact'>
-                <div className="logo">
-                    <h2>Contact</h2>
-                    <div>
-                        <span>Jezeli masz jakies pytania możesz je nam przesłać</span>
-                        <span>Tu mozesz nas znalezc</span>
-                    </div>
-                </div>
-                <div className="contactDetails">
-                    <div className='containerForm'>
-                        <form>
-                            <label>
-                                Imie: {inputNameAttention}
-                                <input
-                                    style={inputBorderName}
-                                    value={inputName}
-                                    type="text"
-                                    name="name"
-                                    placeholder='podaj nam swoj pseudonim lub imie'
-                                    onChange={this.handleInputName}/>
-                            </label>
-                            <label>
-                                E-mail: {inputEmailAttention}
-                                <input
-                                    style={inputBorderEmail}
-                                    value={inputEmail}
-                                    type="email"
-                                    name="email"
-                                    placeholder='podaj swoj e-mail'
-                                    onChange={this.handleInputEmail}/>
-                            </label>
-                            <label>
-                                Twoja wiadomosc: {inputTextareaAttention}
-                                <textarea
-                                    style={inputBorderTextarea}
-                                    name="wiadomosc"
-                                    placeholder='Wiadomosc'
-                                    value={inputTextarea}
-                                    onChange={this.handleTextarea}/>
-                                <input type="submit" value="Wyslij"/>
-                            </label>
-                        </form>
-                    </div>
-                    <div className="location">
-                        <div className={'map' + this.state.count}>
-                            <div
-                                onClick={this.handleIncrease}
-                                className="plus">
-                                <i className="fa fa-plus" />
-                            </div>
-                            <div
-                                onClick={this.handleDecrease}
-                                className="minus">
-                                <i className="fa fa-minus" />
-                            </div>
+            <div className="contactSection">
+                <div className='contact'>
+                    <div className="logo">
+                        <h2>Contact</h2>
+                        <div>
+                            <span>Jezeli masz jakies pytania możesz je nam przesłać</span>
+                            <span>Tu mozesz nas znalezc
+                            <i className="fa fa-level-down" />
+                            </span>
                         </div>
-                        <div className="infoContact">
+                    </div>
+                    <div className="contactDetails">
+                        <div className='containerForm'>
+                            <form>
+                                <label>
+                                    Imie: {inputNameAttention}
+                                    <input
+                                        style={inputBorderName}
+                                        value={inputName}
+                                        type="text"
+                                        name="name"
+                                        placeholder='podaj nam swoj pseudonim lub imie'
+                                        onChange={this.handleInputName}/>
+                                </label>
+                                <label>
+                                    E-mail: {inputEmailAttention}
+                                    <input
+                                        style={inputBorderEmail}
+                                        value={inputEmail}
+                                        type="email"
+                                        name="email"
+                                        placeholder='podaj swoj e-mail'
+                                        onChange={this.handleInputEmail}/>
+                                </label>
+                                <label>
+                                    Twoja wiadomosc: {inputTextareaAttention}
+                                    <textarea
+                                        style={inputBorderTextarea}
+                                        name="wiadomosc"
+                                        placeholder='Wiadomosc'
+                                        value={inputTextarea}
+                                        onChange={this.handleTextarea}/>
+                                    <input type="submit" value="Wyslij"/>
+                                </label>
+                            </form>
+                        </div>
+                        <div className="location">
+                            <div className={'map' + this.state.count}>
+                                <div
+                                    onClick={this.handleIncrease}
+                                    className="plus">
+                                    <i className="fa fa-plus" />
+                                </div>
+                                <div
+                                    onClick={this.handleDecrease}
+                                    className="minus">
+                                    <i className="fa fa-minus" />
+                                </div>
+                            </div>
+                            <div className="infoContact">
 
+                            </div>
                         </div>
                     </div>
                 </div>
