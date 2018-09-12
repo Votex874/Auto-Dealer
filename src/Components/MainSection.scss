@@ -1,20 +1,37 @@
 @mixin img($url){
   width: 70%;
-  height: 70%;
+  height: 80%;
   background-image: url($url);
   background-size: cover;
   background-position: center;
-  border: 2px solid #ddd;
+  border: 4px solid #232323;
 }
 
 
 .mainContainer{
     width: 1200px;
-    background-color: blue;
-    height: 600px;
-    margin: 0 auto;
+    background-color: #CCD1D1;
+    height: 700px;
+    margin: 0 auto 0 auto;
+    border-bottom: 3px dotted #232323;
+    .name{
+      font-size: 200%;
+      padding-top: 2px;
+      height: 100px;
+      margin-left: 14.5%;
+      position: relative;
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 690px;
+        background-color: #232323;
+        top: 84px;
+      }
+    }
     .slider{
-      height: 100%;
+      height: 550px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -24,7 +41,7 @@
         font-size: 600%;
         cursor: pointer;
         &:hover{
-          color: #ddd;
+          color: #ededed;
         }
       }
       .audi1{

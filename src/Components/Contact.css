@@ -3,7 +3,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 550px; }
+  height: 550px;
+  background-color: #CCD1D1; }
   .contact .logo {
     width: 100%;
     height: 150px;

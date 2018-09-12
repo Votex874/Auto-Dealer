@@ -1,13 +1,24 @@
 .containerOfferts {
   width: 1200px;
-  margin: 0 auto;
-  background-color: #D0D0D0;
+  margin: -27px auto 0 auto;
+  background-color: #CCD1D1;
+  height: 680px;
+  border-bottom: 3px dotted #232323;
   h2{
     width: 100%;
-    padding-top: 30px;
-    padding-left: 40px;
+    padding: 50px 0 30px 30px;
     letter-spacing: 2px;
     font-size: 200%;
+    position: relative;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 5px;
+      width: 220px;
+      background-color: #232323;
+      top: 86px;
+    }
   }
   .offertList{
     ul{
@@ -16,19 +27,15 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-bottom: 30px;
       li{
         width: 20%;
         text-align: center;
         list-style: none;
         padding: 10px 0;
         font-size: 120%;
-        border: 1px dotted #222;
-        border-radius: 10px;
-        &:hover{
-          color: #C0C0C0;
-          background-color: #222222;
-          cursor: pointer;
-        }
+        border-bottom: 2px dotted #222;
+        cursor: pointer;
         &:nth-of-type(3){
           margin-right: 20px;
         }

@@ -10,35 +10,91 @@ class SectionOffert extends Component {
         super(props);
 
         let offertArray = ['Gotówka', 'Leasing', 'Abonament'];
-        let indexOffert = <Gotowka/>
+        let indexOffert = <Gotowka/>;
 
         this.state = {
             offertArray,
             pseudoNumber: 0,
             indexOffert,
+            Gotówka: {
+                color: 'white',
+                borderBottom: '2px dotted white',
+            },
+            Leasing: {
+                color: '',
+                borderBottom: '',
+            },
+            Abonament: {
+                color: '',
+                borderBottom: '',
+            },
         }
     }
 
     creatingOfferts = () => {
-      const { offertArray } = this.state;
+      const { offertArray,Gotówka,Leasing,Abonament } = this.state;
+      const arrayStyle = [Gotówka, Leasing, Abonament];
 
       const array = offertArray.map((e,i) => {
-          return <li key={i} onClick={() => this.handleClickOffert(i)}>{e}</li>
+          return <li style={arrayStyle[i]} key={i} onClick={() => this.handleClickOffert(i)}>{e}</li>
       });
       return array;
     };
 
     handleClickOffert = index => {
-
         let varriable = <Gotowka/>;
         if(index === 1){
+            this.setState({
+                Leasing:{
+                    color: 'white',
+                    borderBottom: '2px dotted white',
+                },
+                Abonament:{
+                    color: '',
+                    borderBottom: '2px dotted #222',
+                },
+                Gotówka: {
+                    color: '',
+                    borderBottom: '2px dotted #222',
+                },
+            });
             varriable = <Leasing/>;
         }else if(index === 2){
+            this.setState({
+                Leasing:{
+                    color: '',
+                    borderBottom: '2px dotted #222',
+                },
+                Abonament:{
+                    color: 'white',
+                    borderBottom: '2px dotted white',
+                },
+                Gotówka: {
+                    color: '',
+                    borderBottom: '2px dotted #222',
+                },
+            });
             varriable = <Abonament/>;
         }else{
+            this.setState({
+                Leasing:{
+                    color: '',
+                    borderBottom: '2px dotted #222',
+                },
+                Abonament:{
+                    color: '',
+                    borderBottom: '2px dotted #222',
+                },
+                Gotówka: {
+                    color: 'white',
+                    borderBottom: '2px dotted white',
+                },
+            });
             varriable = <Gotowka/>;
+            this.setState({
+                hover: '#000',
+            })
         }
-
         this.setState({
            indexOffert: varriable,
         });

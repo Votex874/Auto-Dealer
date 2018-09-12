@@ -8,9 +8,12 @@ class MainSection extends Component {
     constructor(props){
         super(props);
 
+        const audiName = ['A1' ,'A6','Q3','Q7','A3','RS5'];
+
         this.state = {
             count: 1,
             classAudi: 'audi',
+            audiName,
         }
     }
 
@@ -56,11 +59,14 @@ class MainSection extends Component {
     };
 
     render() {
-        const {count, classAudi } = this.state;
+        const {count, classAudi,audiName } = this.state;
 
 
         return (
                 <div className="mainContainer">
+                    <div className="name">
+                        <h4>Oto jeden z naszych najnowszych modeli:  <span>{audiName[count - 1]}</span></h4>
+                    </div>
                     <div className="slider">
                         <div className="arrow"
                             onClick={this.handleLeftArrow}>

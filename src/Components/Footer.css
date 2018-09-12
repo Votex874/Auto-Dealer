@@ -1,7 +1,8 @@
 .footerContainer {
   width: 100%;
   height: 160px;
-  background-color: #00b386; }
+  background-color: #232323;
+  color: #ededed; }
   .footerContainer .footer {
     display: flex;
     flex-direction: row;

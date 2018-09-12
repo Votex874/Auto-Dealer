@@ -1,30 +1,37 @@
 .containerOfferts {
   width: 1200px;
-  margin: 0 auto;
-  background-color: #D0D0D0; }
+  margin: -27px auto 0 auto;
+  background-color: #CCD1D1;
+  height: 680px;
+  border-bottom: 3px dotted #232323; }
   .containerOfferts h2 {
     width: 100%;
-    padding-top: 30px;
-    padding-left: 40px;
+    padding: 50px 0 30px 30px;
     letter-spacing: 2px;
-    font-size: 200%; }
+    font-size: 200%;
+    position: relative; }
+    .containerOfferts h2:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 5px;
+      width: 220px;
+      background-color: #232323;
+      top: 86px; }
   .containerOfferts .offertList ul {
     padding-left: 80px;
     padding-right: 80px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 30px; }
     .containerOfferts .offertList ul li {
       width: 20%;
       text-align: center;
       list-style: none;
       padding: 10px 0;
       font-size: 120%;
-      border: 1px dotted #222;
-      border-radius: 10px; }
-      .containerOfferts .offertList ul li:hover {
-        color: #C0C0C0;
-        background-color: #222222;
-        cursor: pointer; }
+      border-bottom: 2px dotted #222;
+      cursor: pointer; }
       .containerOfferts .offertList ul li:nth-of-type(3) {
         margin-right: 20px; }
