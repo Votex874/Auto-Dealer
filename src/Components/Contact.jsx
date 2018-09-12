@@ -9,9 +9,12 @@ class Contact extends Component {
 
         this.state = {
             count: 2,
-            inputName: 'Imie',
-            inputEmail: 'E-mail',
-            inputTextarea: 'Wiadomosc',
+            inputName: '',
+            inputEmail: '',
+            inputTextarea: '',
+            inputNameAttention: '',
+            inputEmailAttention: '',
+            inputTextareaAttention: 'nie powinna być pusta',
         }
     }
 
@@ -32,25 +35,54 @@ class Contact extends Component {
     };
 
     handleInputName = (event ) => {
-        this.setState({
-            inputName: event.target.value,
-        })
+        if(event.target.value.length < 8) {
+            this.setState({
+                inputNameAttention: " twoje imie powinno zawierać więcej niż 8 znaków",
+                inputName: event.target.value,
+            })
+        }else{
+            this.setState({
+                inputNameAttention: "",
+                inputName: event.target.value,
+            })
+        }
     };
+
     handleInputEmail = (event ) => {
-        this.setState({
-            inputEmail: event.target.value,
-        })
+
+        if(event.target.value.indexOf('@') <= -1){
+            console.log(this.state.inputEmail);
+            this.setState({
+                inputEmailAttention: 'e-mail nieprawidłowy brakuje znaku @',
+                inputEmail: event.target.value,
+            })
+        }else{
+            this.setState({
+                inputEmailAttention: '',
+                inputEmail: event.target.value,
+            });
+            console.log('jest @')
+        }
     };
+
     handleTextarea = (event ) => {
-        this.setState({
-            inputTextarea: event.target.value,
-        })
+        if(event.target.value.length <= 0) {
+            this.setState({
+                inputTextareaAttention: ' nie powinna być pusta',
+                inputTextarea: event.target.value,
+            })
+        }else{
+            this.setState({
+                inputTextareaAttention: '',
+                inputTextarea: event.target.value,
+            })
+        }
     };
 
 
     render() {
 
-        const {inputEmail, inputName, inputTextarea} = this.state;
+        const {inputEmail, inputName, inputTextarea, inputNameAttention, inputEmailAttention, inputTextareaAttention} = this.state;
 
         return (
             <div className='contact'>
@@ -66,16 +98,16 @@ class Contact extends Component {
                     <div className='containerForm'>
                         <form>
                             <label>
-                                Imie:
-                                <input value={this.state.inputName} type="text" name="name" placeholder='podaj nam swoj pseudonim lub imie' onChange={this.handleInputName}/>
+                                Imie: {inputNameAttention}
+                                <input value={inputName} type="text" name="name" placeholder='podaj nam swoj pseudonim lub imie' onChange={this.handleInputName}/>
                             </label>
                             <label>
-                                E-mail:
-                                <input value={this.state.inputEmail} type="email" name="email" placeholder='podaj swoj e-mail' onChange={this.handleInputEmail}/>
+                                E-mail: {inputEmailAttention}
+                                <input value={inputEmail} type="email" name="email" placeholder='podaj swoj e-mail' onChange={this.handleInputEmail}/>
                             </label>
                             <label>
-                                Twoja wiadomosc
-                                <textarea name="wiadomosc" placeholder='Wiadomosc' value={this.state.inputTextarea} onChange={this.handleTextarea}/>
+                                Twoja wiadomosc: {inputTextareaAttention}
+                                <textarea name="wiadomosc" placeholder='Wiadomosc' value={inputTextarea} onChange={this.handleTextarea}/>
                                 <input type="submit" value="Wyslij"/>
                             </label>
                         </form>
