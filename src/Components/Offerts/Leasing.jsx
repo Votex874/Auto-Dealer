@@ -6,7 +6,7 @@ class Leasing extends Component {
     render() {
         return (
             <div className='leasing'>
-                <h3>Leasing - rozłóż na raty a nastepnie wykup</h3>
+
                 <div className='info'>
                     <div>
                         <span>Dla indywidualnych klientów</span>

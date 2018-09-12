@@ -8,7 +8,7 @@ class Header extends Component {
             <div className="navContainer">
                 <div className="container">
                    <div className="logo">
-                       <span>Dealer Wrocław</span>
+                       <span>Dealer Audi Wrocław</span>
                    </div>
                     <div className="navigation">
                         <ul>

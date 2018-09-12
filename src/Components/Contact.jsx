@@ -15,6 +15,15 @@ class Contact extends Component {
             inputNameAttention: '',
             inputEmailAttention: '',
             inputTextareaAttention: 'nie powinna być pusta',
+            inputBorderName: {
+                border: ''
+            },
+            inputBorderEmail: {
+                border: ''
+            },
+            inputBorderTextarea: {
+                border: ''
+            }
         }
     }
 
@@ -37,11 +46,17 @@ class Contact extends Component {
     handleInputName = (event ) => {
         if(event.target.value.length < 8) {
             this.setState({
+                inputBorderName: {
+                    border: '1px solid red'
+                },
                 inputNameAttention: " twoje imie powinno zawierać więcej niż 8 znaków",
                 inputName: event.target.value,
             })
         }else{
             this.setState({
+                inputBorderName: {
+                    border: '1px solid green'
+                },
                 inputNameAttention: "",
                 inputName: event.target.value,
             })
@@ -53,11 +68,17 @@ class Contact extends Component {
         if(event.target.value.indexOf('@') <= -1){
             console.log(this.state.inputEmail);
             this.setState({
+                inputBorderEmail: {
+                    border: '1px solid red'
+                },
                 inputEmailAttention: 'e-mail nieprawidłowy brakuje znaku @',
                 inputEmail: event.target.value,
             })
         }else{
             this.setState({
+                inputBorderEmail: {
+                    border: '1px solid green'
+                },
                 inputEmailAttention: '',
                 inputEmail: event.target.value,
             });
@@ -68,11 +89,17 @@ class Contact extends Component {
     handleTextarea = (event ) => {
         if(event.target.value.length <= 0) {
             this.setState({
+                inputBorderTextarea: {
+                    border: '1px solid red'
+                },
                 inputTextareaAttention: ' nie powinna być pusta',
                 inputTextarea: event.target.value,
             })
         }else{
             this.setState({
+                inputBorderTextarea: {
+                    border: '1px solid green'
+                },
                 inputTextareaAttention: '',
                 inputTextarea: event.target.value,
             })
@@ -81,8 +108,17 @@ class Contact extends Component {
 
 
     render() {
-
-        const {inputEmail, inputName, inputTextarea, inputNameAttention, inputEmailAttention, inputTextareaAttention} = this.state;
+        const {
+            inputBorderTextarea,
+            inputBorderEmail,
+            inputBorderName,
+            inputEmail,
+            inputName,
+            inputTextarea,
+            inputNameAttention,
+            inputEmailAttention,
+            inputTextareaAttention
+            } = this.state;
 
         return (
             <div className='contact'>
@@ -92,22 +128,38 @@ class Contact extends Component {
                         <span>Jezeli masz jakies pytania możesz je nam przesłać</span>
                         <span>Tu mozesz nas znalezc</span>
                     </div>
-
                 </div>
                 <div className="contactDetails">
                     <div className='containerForm'>
                         <form>
                             <label>
                                 Imie: {inputNameAttention}
-                                <input value={inputName} type="text" name="name" placeholder='podaj nam swoj pseudonim lub imie' onChange={this.handleInputName}/>
+                                <input
+                                    style={inputBorderName}
+                                    value={inputName}
+                                    type="text"
+                                    name="name"
+                                    placeholder='podaj nam swoj pseudonim lub imie'
+                                    onChange={this.handleInputName}/>
                             </label>
                             <label>
                                 E-mail: {inputEmailAttention}
-                                <input value={inputEmail} type="email" name="email" placeholder='podaj swoj e-mail' onChange={this.handleInputEmail}/>
+                                <input
+                                    style={inputBorderEmail}
+                                    value={inputEmail}
+                                    type="email"
+                                    name="email"
+                                    placeholder='podaj swoj e-mail'
+                                    onChange={this.handleInputEmail}/>
                             </label>
                             <label>
                                 Twoja wiadomosc: {inputTextareaAttention}
-                                <textarea name="wiadomosc" placeholder='Wiadomosc' value={inputTextarea} onChange={this.handleTextarea}/>
+                                <textarea
+                                    style={inputBorderTextarea}
+                                    name="wiadomosc"
+                                    placeholder='Wiadomosc'
+                                    value={inputTextarea}
+                                    onChange={this.handleTextarea}/>
                                 <input type="submit" value="Wyslij"/>
                             </label>
                         </form>
@@ -116,14 +168,12 @@ class Contact extends Component {
                         <div className={'map' + this.state.count}>
                             <div
                                 onClick={this.handleIncrease}
-                                className="plus"
-                            >
+                                className="plus">
                                 <i className="fa fa-plus" />
                             </div>
                             <div
                                 onClick={this.handleDecrease}
-                                className="minus"
-                            >
+                                className="minus">
                                 <i className="fa fa-minus" />
                             </div>
                         </div>

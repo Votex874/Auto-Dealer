@@ -2,3 +2,16 @@
   width: 100%;
   height: 160px;
   background-color: #00b386; }
+  .footerContainer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto; }
+    .footerContainer .footer .achievements {
+      width: 25%; }
+    .footerContainer .footer .infoContact {
+      width: 25%; }
+    .footerContainer .footer .history {
+      width: 40%; }

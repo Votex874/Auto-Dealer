@@ -6,7 +6,7 @@ class Abonament extends Component {
     render() {
         return (
             <div className='abonament'>
-                <h3>Abonament - płać i zmieniaj auto na nowe</h3>
+
                 <div className='info'>
                     <div>
                         <span>Dla indywidualnych klientów</span>

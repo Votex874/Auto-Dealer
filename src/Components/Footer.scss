@@ -2,4 +2,21 @@
   width: 100%;
   height: 160px;
   background-color: #00b386;
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    .achievements{
+      width:25%;
+    }
+    .infoContact{
+      width: 25%;
+    }
+    .history{
+      width: 40%;
+    }
+  }
 }

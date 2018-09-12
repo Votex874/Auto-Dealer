@@ -10,10 +10,10 @@
     align-items: center;
     justify-content: space-between; }
     .navContainer .container .logo {
-      width: 30%;
+      width: 35%;
       font-size: 260%; }
     .navContainer .container .navigation {
-      width: 50%;
+      width: 45%;
       text-align: right; }
       .navContainer .container .navigation ul li {
         display: inline-block;

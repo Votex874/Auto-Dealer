@@ -7,7 +7,6 @@ class Gotowka extends Component {
     render() {
         return (
             <div className='cash'>
-                <h3>Gotówka - jednorazowa płatność i z głowy</h3>
                 <div className='info'>
                     <div>
                         <span>Dla indywidualnych klientów</span>
