@@ -16,13 +16,13 @@ class Contact extends Component {
             inputEmailAttention: '',
             inputTextareaAttention: 'nie powinna być pusta',
             inputBorderName: {
-                border: ''
+                borderBottom: ''
             },
             inputBorderEmail: {
-                border: ''
+                borderBottom: ''
             },
             inputBorderTextarea: {
-                border: ''
+                borderBottom: ''
             }
         }
     }
@@ -47,7 +47,7 @@ class Contact extends Component {
         if(event.target.value.length < 8) {
             this.setState({
                 inputBorderName: {
-                    border: '1px solid red'
+                    borderBottom: '1px solid red'
                 },
                 inputNameAttention: " twoje imie powinno zawierać więcej niż 8 znaków",
                 inputName: event.target.value,
@@ -55,7 +55,7 @@ class Contact extends Component {
         }else{
             this.setState({
                 inputBorderName: {
-                    border: '1px solid #2E3EFF'
+                    borderBottom: '1px solid #2E3EFF'
                 },
                 inputNameAttention: "",
                 inputName: event.target.value,
@@ -69,7 +69,7 @@ class Contact extends Component {
             console.log(this.state.inputEmail);
             this.setState({
                 inputBorderEmail: {
-                    border: '1px solid red'
+                    borderBottom: '1px solid red'
                 },
                 inputEmailAttention: 'e-mail nieprawidłowy brakuje znaku @',
                 inputEmail: event.target.value,
@@ -77,7 +77,7 @@ class Contact extends Component {
         }else{
             this.setState({
                 inputBorderEmail: {
-                    border: '1px solid #2E3EFF'
+                    borderBottom: '1px solid #2E3EFF'
                 },
                 inputEmailAttention: '',
                 inputEmail: event.target.value,
@@ -90,7 +90,7 @@ class Contact extends Component {
         if(event.target.value.length <= 0) {
             this.setState({
                 inputBorderTextarea: {
-                    border: '1px solid red'
+                    borderBottom: '1px solid red'
                 },
                 inputTextareaAttention: ' nie powinna być pusta',
                 inputTextarea: event.target.value,
@@ -98,7 +98,7 @@ class Contact extends Component {
         }else{
             this.setState({
                 inputBorderTextarea: {
-                    border: '1px solid #2E3EFF'
+                    borderBottom: '1px solid #2E3EFF'
                 },
                 inputTextareaAttention: '',
                 inputTextarea: event.target.value,

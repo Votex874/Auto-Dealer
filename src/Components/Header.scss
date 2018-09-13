@@ -10,15 +10,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .logo{
+    .logo {
       width: 35%;
       font-size: 120%;
-      a{
+      a {
         text-decoration: none;
         color: #ededed;
       }
-      span{
-        color: #2E3EFF;
+      h2 {
+        color: #fff;
+        transition: 1s;
+        cursor: pointer;
+        span {
+          transition: 1s;
+          color: #2E3EFF;
+        }
+        &:hover{
+          color: #2E3EFF;
+          span{
+            color: #fff;
+          }
+        }
       }
     }
     .navigation{
@@ -29,7 +41,11 @@
           display: inline-block;
           margin: 0 20px;
           font-size: 120%;
-          transition: 2s;
+          transition: 1s;
+          cursor: pointer;
+          &:hover{
+            color: #2E3EFF;
+          }
         }
         li:nth-of-type(3){
           margin-right: 0;

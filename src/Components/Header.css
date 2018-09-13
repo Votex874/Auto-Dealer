@@ -16,8 +16,17 @@
       .navContainer .container .logo a {
         text-decoration: none;
         color: #ededed; }
-      .navContainer .container .logo span {
-        color: #2E3EFF; }
+      .navContainer .container .logo h2 {
+        color: #fff;
+        transition: 1s;
+        cursor: pointer; }
+        .navContainer .container .logo h2 span {
+          transition: 1s;
+          color: #2E3EFF; }
+        .navContainer .container .logo h2:hover {
+          color: #2E3EFF; }
+          .navContainer .container .logo h2:hover span {
+            color: #fff; }
     .navContainer .container .navigation {
       width: 45%;
       text-align: right; }
@@ -25,6 +34,9 @@
         display: inline-block;
         margin: 0 20px;
         font-size: 120%;
-        transition: 2s; }
+        transition: 1s;
+        cursor: pointer; }
+        .navContainer .container .navigation ul li:hover {
+          color: #2E3EFF; }
       .navContainer .container .navigation ul li:nth-of-type(3) {
         margin-right: 0; }

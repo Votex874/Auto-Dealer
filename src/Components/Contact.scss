@@ -110,7 +110,8 @@
               padding-left: 10px;
               margin: 0 0 15px 0;
               outline: none;
-              border: 1px solid #ddd;
+              border: none;
+              border-bottom: 1px solid #ddd;
             }
             textarea {
               padding-left: 10px;
@@ -118,7 +119,8 @@
               height: 164px;
               outline: none;
               resize: none;
-              border: 1px solid #ddd;
+              border: none;
+              border-bottom: 1px solid #ddd;
             }
           }
           label:nth-of-type(3) {
@@ -132,6 +134,12 @@
               border: none;
               color: #fff;
               letter-spacing: 1px;
+              cursor: pointer;
+              transition: 0.4s;
+              &:hover{
+                color: #2E3EFF;
+                background-color: #fff;
+              }
             }
           }
         }

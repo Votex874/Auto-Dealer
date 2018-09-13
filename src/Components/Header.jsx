@@ -16,22 +16,33 @@ class Header extends Component {
         }
     }
 
+    handleSemiSmoothScroll = (scrollTo,speedScrolling) =>{
+        if(this.state.count >= 1){
+            this.setState({
+                count: 0,
+            });
+        }
+        this.idInterval = setInterval(() => {
+            if(this.state.count < scrollTo) {
+                console.log(this.state.count);
+                this.setState({
+                    count: this.state.count + speedScrolling,
+                });
+                console.log(this.state.count)
+            }else{
+                clearInterval(this.idInterval);
+                return null;
+            }
+            window.scrollTo(0, this.state.count);
+        }, 16)
+    };
+
     handleScrollToOfferts = () =>{
-            this.idInterval = setInterval(() => {
-                if(this.state.count < 780) {
-                    console.log('dupa');
-                    this.setState({
-                        count: this.state.count + 10,
-                    });
-                    console.log(this.state.count)
-                }else if(this.state.count === 780){
-                    this.setState({
-                        count: 0,
-                    });
-                    return null;
-                }
-                window.scrollTo(0, this.state.count);
-            }, 16)
+        this.handleSemiSmoothScroll(770,10)
+    };
+
+    handleScrollToContact = () =>{
+        this.handleSemiSmoothScroll(1570,15)
     };
 
 
@@ -51,7 +62,7 @@ class Header extends Component {
                         <ul>
                             <li onClick={this.handleScrollToOfferts}>Oferty</li>
                             <li>Modele</li>
-                            <li>Kontakt</li>
+                            <li onClick={this.handleScrollToContact}>Kontakt</li>
                         </ul>
                     </div>
                 </div>
