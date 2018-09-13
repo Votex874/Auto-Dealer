@@ -24,7 +24,7 @@ class Header extends Component {
         }
         this.idInterval = setInterval(() => {
             if(this.state.count < scrollTo) {
-                console.log(this.state.count);
+                console.log(window.scrollY );
                 this.setState({
                     count: this.state.count + speedScrolling,
                 });

@@ -14,7 +14,14 @@ import {
 
 
 class App extends Component {
+
+    handleFixedArrowUp = () => {
+
+
+    };
+
   render() {
+      console.log(window.scrollTop);
     return (
       <div>
         <Header/>
