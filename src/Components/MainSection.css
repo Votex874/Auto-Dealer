@@ -19,6 +19,9 @@
         width: 690px;
         background-color: #2E3EFF;
         top: 84px; }
+      .firstSection .mainContainer .name span {
+        color: #2E3EFF;
+        text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff; }
     .firstSection .mainContainer .slider {
       height: 550px;
       display: flex;

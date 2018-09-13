@@ -66,7 +66,7 @@ class MainSection extends Component {
                 <div className='firstSection'>
                     <div className="mainContainer">
                         <div className="name">
-                            <h4>Oto jeden z naszych najnowszych modeli:  <span>{audiName[count - 1]}</span></h4>
+                            <h4>O to jeden z naszych najnowszych modeli:  <span>{audiName[count - 1]}</span></h4>
                         </div>
                         <div className="slider">
                             <div className="arrow"

@@ -55,7 +55,7 @@ class Contact extends Component {
         }else{
             this.setState({
                 inputBorderName: {
-                    border: '1px solid green'
+                    border: '1px solid #2E3EFF'
                 },
                 inputNameAttention: "",
                 inputName: event.target.value,
@@ -77,7 +77,7 @@ class Contact extends Component {
         }else{
             this.setState({
                 inputBorderEmail: {
-                    border: '1px solid green'
+                    border: '1px solid #2E3EFF'
                 },
                 inputEmailAttention: '',
                 inputEmail: event.target.value,
@@ -98,7 +98,7 @@ class Contact extends Component {
         }else{
             this.setState({
                 inputBorderTextarea: {
-                    border: '1px solid green'
+                    border: '1px solid #2E3EFF'
                 },
                 inputTextareaAttention: '',
                 inputTextarea: event.target.value,

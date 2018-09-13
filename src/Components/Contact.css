@@ -84,7 +84,7 @@
         width: 48%;
         height: 350px; }
         .contactSection .contact .contactDetails .location .map1 {
-          width: 100%;
+          width: 96%;
           height: 100%;
           background-image: url("../imgMap/map1.jpg");
           background-position: center;
@@ -118,7 +118,7 @@
               background-color: rgba(191, 191, 191, 0.4);
               color: #2E3EFF; }
         .contactSection .contact .contactDetails .location .map2 {
-          width: 100%;
+          width: 96%;
           height: 100%;
           background-image: url("../imgMap/map2.jpg");
           background-position: center;
@@ -152,7 +152,7 @@
               background-color: rgba(191, 191, 191, 0.4);
               color: #2E3EFF; }
         .contactSection .contact .contactDetails .location .map3 {
-          width: 100%;
+          width: 96%;
           height: 100%;
           background-image: url("../imgMap/map3.png");
           background-position: center;

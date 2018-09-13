@@ -13,6 +13,10 @@
     .logo{
       width: 35%;
       font-size: 120%;
+      a{
+        text-decoration: none;
+        color: #ededed;
+      }
       span{
         color: #2E3EFF;
       }
@@ -25,6 +29,7 @@
           display: inline-block;
           margin: 0 20px;
           font-size: 120%;
+          transition: 2s;
         }
         li:nth-of-type(3){
           margin-right: 0;
