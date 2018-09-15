@@ -13,6 +13,8 @@ class Header extends Component {
 
         this.state = {
             count: 0,
+            showOptions: '',
+            increasePadding: 0,
         }
     }
 
@@ -37,17 +39,36 @@ class Header extends Component {
         }, 16)
     };
 
-    handleScrollToOfferts = () =>{
-        this.handleSemiSmoothScroll(770,10)
+    // handleScrollToOfferts = () =>{
+    //     this.handleSemiSmoothScroll(700,10)
+    // };
+    //
+    // handleScrollToContact = () =>{
+    //     this.handleSemiSmoothScroll(1700,15)
+    // };
+
+    handleShowNavbar = () =>{
+        this.setState({
+            showOptions: 'navbar',
+            increasePadding: '110px',
+
+        })
+
     };
 
-    handleScrollToContact = () =>{
-        this.handleSemiSmoothScroll(1570,15)
-    };
+    handleHideNavbar = () =>{
+      this.setState({
+          showOptions: '',
+          increasePadding: '',
 
+      })
+    };
 
 
     render() {
+
+        const {showOptions, increasePadding} = this.state;
+
         return (
             <div className="navContainer">
                 <div className="container">
@@ -60,9 +81,17 @@ class Header extends Component {
                    </div>
                     <div className="navigation">
                         <ul>
-                            <li onClick={this.handleScrollToOfferts}>Oferty</li>
-                            <li>Modele</li>
-                            <li onClick={this.handleScrollToContact}>Kontakt</li>
+                            <li>Oferty</li>
+                            <li
+                                style={{paddingBottom: increasePadding}}
+                                onMouseLeave={this.handleHideNavbar}
+                                onMouseEnter={this.handleShowNavbar}>
+                                Modele
+                                <div
+
+                                    className={showOptions} />
+                            </li>
+                            <li>Kontakt</li>
                         </ul>
                     </div>
                 </div>

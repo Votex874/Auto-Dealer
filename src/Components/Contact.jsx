@@ -121,7 +121,7 @@ class Contact extends Component {
             } = this.state;
 
         return (
-            <div className="contactSection">
+            <div id='contactId' className="contactSection">
                 <div className='contact'>
                     <div className="logo">
                         <h2>Contact</h2>
