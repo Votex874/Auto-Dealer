@@ -1,0 +1,22 @@
+$(document).ready(function(){
+	$(window).bind('hashchange', function (e) {
+        if(window.location.href.indexOf("layer/wymiary") > -1){
+            let addImg = () => {
+                let src = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+                new Image().src = src+'adsearch.adkontekst.pl/deimos/tracking/?tid=34359741859&reid=AKCS3491&expire=5&nc=1502279498998782119193';
+            }
+            setTimeout(function(){ addImg() }, 2000);
+        }
+    });
+    if(window.location.href.indexOf("pl/web/pl/modele") > -1){
+	    $(window).bind('hashchange', function (e) {        
+            if(window.location.href.indexOf("layer/galeria") > -1){
+                let addImg_models_layer = () => {
+                    var src = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+                    new Image().src = src+'adsearch.adkontekst.pl/deimos/tracking/?tid=34359741860&reid=AKCS3492&expire=5&nc=1502279542946-1409587159';
+                }
+                setTimeout(function(){ addImg_models_layer() }, 2000);
+            }
+        });
+    }
+});

@@ -47,7 +47,7 @@
           transition: 0s;
           display: block;
           width: 240px;
-          height: 300px;
+          height: 262px;
           background-color: #DCDDE5;
           position: absolute;
           top: 50px;
@@ -81,5 +81,89 @@
             height: 15px;
             background-color: #EFEFF0;
             color: black; }
+          .navContainer .container .navigation ul li .navbar .listOfModels {
+            width: 240px;
+            padding: 0; }
+            .navContainer .container .navigation ul li .navbar .listOfModels li {
+              display: block;
+              width: 100%;
+              height: 40px;
+              line-height: 30px;
+              text-align: center;
+              padding: 0;
+              transition: 0s;
+              border-bottom: 1px dotted black; }
+              .navContainer .container .navigation ul li .navbar .listOfModels li:nth-of-type(6) a:hover {
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px; }
+              .navContainer .container .navigation ul li .navbar .listOfModels li a {
+                height: 40px;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a:hover {
+                  border: 1px solid #2E3EFF; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a .audiA4 {
+                  padding: 0;
+                  display: block;
+                  width: 80px;
+                  height: 30px;
+                  margin: 0 0 0 10px;
+                  background-image: url("../imgModels/a4.jpg");
+                  background-size: cover;
+                  background-position: center; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a .audiA6 {
+                  padding: 0;
+                  display: block;
+                  width: 80px;
+                  height: 30px;
+                  margin: 0 0 0 10px;
+                  background-image: url("../imgModels/a6.jpg");
+                  background-size: cover;
+                  background-position: center; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a .audiA8 {
+                  padding: 0;
+                  display: block;
+                  width: 80px;
+                  height: 30px;
+                  margin: 0 0 0 10px;
+                  background-image: url("../imgModels/a8.jpg");
+                  background-size: cover;
+                  background-position: center; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a .audiQ3 {
+                  padding: 0;
+                  display: block;
+                  width: 80px;
+                  height: 30px;
+                  margin: 0 0 0 10px;
+                  background-image: url("../imgModels/Q3.jpg");
+                  background-size: cover;
+                  background-position: center; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a .audiQ5 {
+                  padding: 0;
+                  display: block;
+                  width: 80px;
+                  height: 30px;
+                  margin: 0 0 0 10px;
+                  background-image: url("../imgModels/Q5.jpg");
+                  background-size: cover;
+                  background-position: center; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a .audiQ7 {
+                  padding: 0;
+                  display: block;
+                  width: 80px;
+                  height: 30px;
+                  margin: 0 0 0 10px;
+                  background-image: url("../imgModels/Q7.jpg");
+                  background-size: cover;
+                  background-position: center; }
+                .navContainer .container .navigation ul li .navbar .listOfModels li a .autoName {
+                  color: black;
+                  margin-right: 30px; }
+                  .navContainer .container .navigation ul li .navbar .listOfModels li a .autoName:hover {
+                    color: #fff; }
+              .navContainer .container .navigation ul li .navbar .listOfModels li:nth-of-type(6) {
+                border-bottom: 0; }
       .navContainer .container .navigation ul li:nth-of-type(3) {
         margin-right: 0; }

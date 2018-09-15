@@ -11,41 +11,30 @@ class Header extends Component {
     constructor(props){
         super(props)
 
+        const modelsArray = ['A4', 'A6', 'A8', 'Q3','Q5' ,'Q7'];
+
         this.state = {
             count: 0,
-            showOptions: '',
+            showOptions: 'navbar',
             increasePadding: 0,
+            modelsArray,
         }
     }
 
-    handleSemiSmoothScroll = (scrollTo,speedScrolling) =>{
-        if(this.state.count >= 1){
-            this.setState({
-                count: 0,
-            });
-        }
-        this.idInterval = setInterval(() => {
-            if(this.state.count < scrollTo) {
-                console.log(window.scrollY );
-                this.setState({
-                    count: this.state.count + speedScrolling,
-                });
-                console.log(this.state.count)
-            }else{
-                clearInterval(this.idInterval);
-                return null;
-            }
-            window.scrollTo(0, this.state.count);
-        }, 16)
-    };
+    createLinkArray = () => {
+      const {modelsArray} = this.state;
 
-    // handleScrollToOfferts = () =>{
-    //     this.handleSemiSmoothScroll(700,10)
-    // };
-    //
-    // handleScrollToContact = () =>{
-    //     this.handleSemiSmoothScroll(1700,15)
-    // };
+      const models = modelsArray.map((e,i) =>{
+          return <li key={i}>
+              <Link to={'/' + e} >
+                  <div className={'audi' + e} />
+                  <span className='autoName'>Audi {e}</span>
+              </Link>
+          </li>
+      });
+    return models;
+
+    };
 
     handleShowNavbar = () =>{
         this.setState({
@@ -90,12 +79,11 @@ class Header extends Component {
                                 <div
                                     className={showOptions}>
                                     <div className="invisible" />
-                                    <ul>
-                                        <li>
-                                            <div className='autoImg' />
-                                            <span className='autoName'>Audi A4</span>
-                                        </li>
+                                    <HashRouter>
+                                    <ul className='listOfModels'>
+                                        {this.createLinkArray()}
                                     </ul>
+                                    </HashRouter>
                                 </div>
 
                             </li>

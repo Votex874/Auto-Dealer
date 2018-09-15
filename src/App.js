@@ -14,21 +14,33 @@ import {
 
 
 class App extends Component {
+    constructor(props){
+        super(props);
 
+        const componentsName = ['A4', 'A6', 'A8', 'Q3','Q5' ,'Q7'];
+
+        this.state = {
+            componentsName,
+        }
+
+    }
     handleFixedArrowUp = () => {
+        const components = this.state.componentsName;
 
+        return components.map(e => {
+           return <Route path={'/audi' + e} component={'audi' + e} />
+        })
 
     };
 
   render() {
-      console.log(window.scrollTop);
     return (
       <div>
         <Header/>
           <HashRouter>
               <div>
                   <Route exact path='/' component={MainContainer} />
-                  <Route path='/contact' component={Contact} />
+
               </div>
           </HashRouter>;
         <SectionOffert/>
