@@ -42,16 +42,44 @@
         .navContainer .container .navigation ul li:hover {
           color: #2E3EFF; }
         .navContainer .container .navigation ul li div {
-          display: none;
-          width: 100px;
-          height: 100px;
-          background-color: #2E3EFF;
+          display: none; }
+        .navContainer .container .navigation ul li .navbar {
+          transition: 0s;
+          display: block;
+          width: 240px;
+          height: 300px;
+          background-color: #DCDDE5;
           position: absolute;
           top: 50px;
-          left: 320px;
-          z-index: 1; }
-        .navContainer .container .navigation ul li .navbar {
-          display: block;
-          z-index: 1; }
+          left: 200px;
+          z-index: 1;
+          border-radius: 15px;
+          box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75); }
+          .navContainer .container .navigation ul li .navbar:after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 28px;
+            background-color: #2E3EFF;
+            position: absolute;
+            left: 14px;
+            top: -6px;
+            z-index: 3; }
+          .navContainer .container .navigation ul li .navbar:before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 28px;
+            background-color: #2E3EFF;
+            position: absolute;
+            left: 220px;
+            top: -6px;
+            z-index: 3; }
+          .navContainer .container .navigation ul li .navbar .invisible {
+            display: block;
+            width: 100%;
+            height: 15px;
+            background-color: #EFEFF0;
+            color: black; }
       .navContainer .container .navigation ul li:nth-of-type(3) {
         margin-right: 0; }

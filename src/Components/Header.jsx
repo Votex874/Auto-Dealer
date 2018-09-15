@@ -50,7 +50,7 @@ class Header extends Component {
     handleShowNavbar = () =>{
         this.setState({
             showOptions: 'navbar',
-            increasePadding: '110px',
+            increasePadding: '210px',
 
         })
 
@@ -88,8 +88,16 @@ class Header extends Component {
                                 onMouseEnter={this.handleShowNavbar}>
                                 Modele
                                 <div
+                                    className={showOptions}>
+                                    <div className="invisible" />
+                                    <ul>
+                                        <li>
+                                            <div className='autoImg' />
+                                            <span className='autoName'>Audi A4</span>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                    className={showOptions} />
                             </li>
                             <li>Kontakt</li>
                         </ul>

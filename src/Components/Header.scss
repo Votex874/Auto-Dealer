@@ -51,17 +51,48 @@
           }
           div{
             display: none;
-            width: 100px;
-            height: 100px;
-            background-color: #2E3EFF;
-            position: absolute;
-            top: 50px;
-            left: 320px;
-            z-index: 1;
           }
           .navbar{
+            transition: 0s;
             display: block;
+            width: 240px;
+            height: 300px;
+            background-color: #DCDDE5;
+            position: absolute;
+            top: 50px;
+            left: 200px;
             z-index: 1;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+            &:after {
+              content: "";
+              display: block;
+              width: 10px;
+              height: 28px;
+              background-color: #2E3EFF;
+              position: absolute;
+              left: 14px;
+              top: -6px;
+              z-index: 3;
+            }
+            &:before{
+              content: "";
+              display: block;
+              width: 10px;
+              height: 28px;
+              background-color: #2E3EFF;
+              position: absolute;
+              left: 220px;
+              top: -6px;
+              z-index: 3;
+            }
+            .invisible{
+              display: block;
+              width: 100%;
+              height: 15px;
+              background-color: #EFEFF0;
+              color: black;
+            }
           }
         }
         li:nth-of-type(3){
