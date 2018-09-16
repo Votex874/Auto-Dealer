@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Engine from './Equipments/engineEq'
 import './MainModel.css'
 
 class MainModel extends Component {
@@ -8,7 +9,6 @@ class MainModel extends Component {
 
         const styleOptions = ['standard', 'sport', 's-line'];
         const colorOptions = ['black/white' , 'orange/silver'];
-
         const engineOptions = [
             {
                 item: '140km 1600',
@@ -24,25 +24,51 @@ class MainModel extends Component {
             },
         ];
 
+        const mainArray = [false,false,false];
+
+        const backgroundColor = '';
+
         this.state = {
             engineOptions,
             styleOptions,
             colorOptions,
+            backgroundColor,
+            mainArray,
         }
     }
 
-    handleChecked = (i) => {
-      console.log(i)
+    handleChecked = (i,price) => {
+        const {mainArray} = this.state;
+        console.log(price);
+        const array = mainArray;
+
+        if(array[i] === false){
+            array[i] = true;
+        }else{
+            array[i] = false
+        }
+
+        this.setState({
+            mainArray: array,
+        });
+        console.log(mainArray)
+
     };
 
-    makingOptions = (array) => {
-        const givenArray = array;
-        return givenArray.map((e,i) => {
-            return <li className='givenOption' key={i}>
-                <div className="checkBox" onClick={() => this.handleChecked(i)} />
-                <span className='item' >{e.item + ' cm3'}</span>
-                <span className='price' >{e.price}</span>
-            </li>
+    makingOptions = () => {
+
+        const {engineOptions,mainArray} = this.state;
+
+        const array = mainArray;
+
+        return array.map((e,i) => {
+            return (
+                <Engine key={i}
+                    onCheck={this.handleChecked}
+                    info={engineOptions[i]}
+                    checked={e}
+                    index={i}
+                /> );
         })
 
     };
@@ -57,7 +83,7 @@ class MainModel extends Component {
 
                         </div>
                         <div className="engine">
-                            <span>Moc/Pojemość Silnika</span>
+                            <span className='engineText'>Moc/Pojemość Silnika</span>
                             <ul className='engineList'>
                                 {this.makingOptions(this.state.engineOptions)}
                             </ul>

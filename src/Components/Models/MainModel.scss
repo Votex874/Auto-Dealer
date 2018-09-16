@@ -20,17 +20,34 @@
         border-bottom: 4px dotted #DCDCDC;
       }
       .engine{
+        .engineText{
+          display: block;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          font-size: 105%;
+          letter-spacing: 1px;
+          border-bottom: 3px dotted #DCDCDC;
+        }
         .engineList{
           padding: 0;
           .givenOption{
             width: 100%;
             display: flex;
             flex-direction: row;
+            margin: 15px 0;
+            border-bottom: 3px solid #DCDCDC;
+            &:nth-of-type(3){
+              border-bottom: none;
+            }
             .item{
-              margin-right: 10px
+              margin-right: 10px;
+              width: 60%;
             }
             .price{
-              text-align: left;
+              width: 30%;
+              margin-right: 15px;
+              text-align: right;
               vertical-align: baseline;
               font-size: 100%;
             }

@@ -18,16 +18,31 @@
         letter-spacing: 1px;
         font-size: 110%;
         border-bottom: 4px dotted #DCDCDC; }
+      .modelContainer .containerConfiguration .configuration .engine .engineText {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 105%;
+        letter-spacing: 1px;
+        border-bottom: 3px dotted #DCDCDC; }
       .modelContainer .containerConfiguration .configuration .engine .engineList {
         padding: 0; }
         .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption {
           width: 100%;
           display: flex;
-          flex-direction: row; }
+          flex-direction: row;
+          margin: 15px 0;
+          border-bottom: 3px solid #DCDCDC; }
+          .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption:nth-of-type(3) {
+            border-bottom: none; }
           .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .item {
-            margin-right: 10px; }
+            margin-right: 10px;
+            width: 60%; }
           .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .price {
-            text-align: left;
+            width: 30%;
+            margin-right: 15px;
+            text-align: right;
             vertical-align: baseline;
             font-size: 100%; }
           .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .checkBox {
