@@ -15,7 +15,7 @@ class Header extends Component {
 
         this.state = {
             count: 0,
-            showOptions: 'navbar',
+            showOptions: '',
             increasePadding: 0,
             modelsArray,
         }

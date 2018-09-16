@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import MainContainer from './Components/MainSection';
 import SectionOffert from './Components/SectionOffert';
 import Contact from './Components/Contact';
+import MainModel from './Components/Models/MainModel';
 import Footer from './Components/Footer';
 import {
     HashRouter,
@@ -46,6 +47,7 @@ class App extends Component {
         <SectionOffert/>
         <Contact/>
         <Footer/>
+        <MainModel/>
       </div>
     );
   }
