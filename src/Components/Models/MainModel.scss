@@ -1,0 +1,26 @@
+.modelContainer{
+  background-color: #EFEFF0;
+  .containerConfiguration{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    .configuration{
+      width: 25%;
+      background-color: yellow;
+      span{
+        display: block;
+      }
+    }
+    .givenModel{
+      width: 75%;
+      background-color: blue;
+      display: flex;
+      flex-direction: column;
+      .imgModel{
+        height: 80%;
+      }
+    }
+  }
+}
