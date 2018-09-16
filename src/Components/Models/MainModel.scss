@@ -8,9 +8,41 @@
     flex-direction: row;
     .configuration{
       width: 25%;
-      background-color: yellow;
-      span{
+      border: 10px solid #DCDCDC;
+      .configurationSpan{
         display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 110%;
+        border-bottom: 4px dotted #DCDCDC;
+      }
+      .engine{
+        .engineList{
+          padding: 0;
+          .givenOption{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .item{
+              margin-right: 10px
+            }
+            .price{
+              text-align: left;
+              vertical-align: baseline;
+              font-size: 100%;
+            }
+            .checkBox{
+              width: 8px;
+              height: 8px;
+              border: 1px solid #1a1a1a;
+              border-radius: 50%;
+              margin: 3px 10px 0 10px;
+            }
+          }
+        }
       }
     }
     .givenModel{

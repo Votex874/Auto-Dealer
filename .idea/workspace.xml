@@ -33,8 +33,11 @@
           <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+                <state relative-caret-position="306">
+                  <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -135,8 +138,8 @@
           <file leaf-file-name="MainModel.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+                <state relative-caret-position="520">
+                  <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -182,8 +185,8 @@
         <option value="$PROJECT_DIR$/src/Components/Header.scss" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Components/Header.jsx" />
-        <option value="$PROJECT_DIR$/src/Components/Models/MainModel.scss" />
         <option value="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" />
+        <option value="$PROJECT_DIR$/src/Components/Models/MainModel.scss" />
       </list>
     </option>
   </component>
@@ -237,19 +240,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="auto-dealer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto-dealer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto-dealer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auto-dealer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="imgModels" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -295,12 +285,12 @@
       <workItem from="1536862341342" duration="4333000" />
       <workItem from="1536919546921" duration="3199000" />
       <workItem from="1537021288881" duration="13149000" />
-      <workItem from="1537117392834" duration="913000" />
+      <workItem from="1537117392834" duration="4371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82172000" />
+    <option name="totallyTimeSpent" value="85630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="812" extended-state="0" />
@@ -744,17 +734,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="306">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="520">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>

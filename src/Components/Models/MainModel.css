@@ -8,9 +8,34 @@
     flex-direction: row; }
     .modelContainer .containerConfiguration .configuration {
       width: 25%;
-      background-color: yellow; }
-      .modelContainer .containerConfiguration .configuration span {
-        display: block; }
+      border: 10px solid #DCDCDC; }
+      .modelContainer .containerConfiguration .configuration .configurationSpan {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 110%;
+        border-bottom: 4px dotted #DCDCDC; }
+      .modelContainer .containerConfiguration .configuration .engine .engineList {
+        padding: 0; }
+        .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption {
+          width: 100%;
+          display: flex;
+          flex-direction: row; }
+          .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .item {
+            margin-right: 10px; }
+          .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .price {
+            text-align: left;
+            vertical-align: baseline;
+            font-size: 100%; }
+          .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .checkBox {
+            width: 8px;
+            height: 8px;
+            border: 1px solid #1a1a1a;
+            border-radius: 50%;
+            margin: 3px 10px 0 10px; }
     .modelContainer .containerConfiguration .givenModel {
       width: 75%;
       background-color: blue;
