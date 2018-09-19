@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Engine from './Equipments/engineEq'
 import Style from './Equipments/styleEq'
+import Color from './Equipments/kolorEq'
 import './MainModel.css'
 
 class MainModel extends Component {
@@ -8,7 +9,20 @@ class MainModel extends Component {
         super(props);
 
 
-        const colorOptions = ['black/white' , 'orange/silver'];
+        const colorOptions = [
+            {
+                item: 'black/white',
+                price: '0',
+            },
+            {
+                item: 'orange/silver',
+                price: '2100',
+            },
+            {
+                item: 'red/aqua',
+                price: '3300',
+            },
+        ];
         const styleOptions = [
             {
               item: 'standard',
@@ -41,6 +55,8 @@ class MainModel extends Component {
 
         const engineArray = [true,false,false];
         const styleArray = [true,false,false];
+        const colorArray = [true,false,false];
+        const colorValue = 0;
         const styleValue = 0;
         const engineValue = 0;
         const sum = 0;
@@ -52,6 +68,8 @@ class MainModel extends Component {
             styleOptions,
             colorOptions,
             backgroundColor,
+            colorArray,
+            colorValue,
             engineArray,
             engineValue,
             styleArray,
@@ -85,6 +103,19 @@ class MainModel extends Component {
         }
     };
 
+    handleColorChecked = (i,price) => {
+
+        let array = [false, false, false];
+
+        if(array[i] === false){
+            array[i] = true;
+            this.setState({
+                colorArray: array,
+                colorValue: Number(price),
+            });
+        }
+    };
+
     makingEngineOptions = (array,options) => {
         return array.map((e,i) => {
             return (
@@ -108,6 +139,18 @@ class MainModel extends Component {
         })
     };
 
+    makingColorOptions = (array,options) => {
+        return array.map((e,i) => {
+            return (
+                <Color key={i}
+                       onCheck={this.handleColorChecked()}
+                       info={options[i]}
+                       checked={e}
+                       index={i}
+                /> );
+        })
+    };
+
     countingSum = () => {
       const { styleValue, engineValue} = this.state;
 
@@ -117,7 +160,7 @@ class MainModel extends Component {
 
     render() {
 
-        const {engineOptions,styleOptions,styleArray, engineArray,sum} = this.state;
+        const {engineOptions,styleOptions,styleArray, engineArray,colorArray, colorOptions} = this.state;
 
         return (
             <div className="modelContainer">
@@ -137,6 +180,10 @@ class MainModel extends Component {
                             </ul>
                         </div>
                         <div className="color">
+                            <span className='engineText'>Color modelu</span>
+                            <ul className='engineList'>
+                                {this.makingColorOptions(colorArray, colorOptions)}
+                            </ul>
                         </div>
                     </div>
                     <div className="givenModel">

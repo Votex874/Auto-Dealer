@@ -16,9 +16,6 @@
       flex-direction: row;
       margin: 15px 0;
       border-bottom: 3px solid #DCDCDC;
-      &:nth-of-type(3){
-        border-bottom: none;
-      }
       .item{
         margin-right: 10px;
         width: 60%;
@@ -60,52 +57,16 @@
         font-weight: bold;
         letter-spacing: 1px;
         font-size: 110%;
-        border-bottom: 4px dotted #DCDCDC;
+        border-bottom: 10px solid #DCDCDC;
       }
       .finishStyle{
         @include option('1')
       }
       .engine{
-        .engineText{
-          display: block;
-          height: 30px;
-          line-height: 30px;
-          text-align: center;
-          font-size: 105%;
-          letter-spacing: 1px;
-          border-bottom: 3px dotted #DCDCDC;
-        }
-        .engineList{
-          padding: 0;
-          .givenOption{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            margin: 15px 0;
-            border-bottom: 3px solid #DCDCDC;
-            &:nth-of-type(3){
-              border-bottom: none;
-            }
-            .item{
-              margin-right: 10px;
-              width: 60%;
-            }
-            .price{
-              width: 30%;
-              margin-right: 15px;
-              text-align: right;
-              vertical-align: baseline;
-              font-size: 100%;
-            }
-            .checkBox{
-              width: 8px;
-              height: 8px;
-              border: 1px solid #1a1a1a;
-              border-radius: 50%;
-              margin: 3px 10px 0 10px;
-            }
-          }
-        }
+        @include option('2')
+      }
+      .color{
+        @include option('3')
       }
     }
     .givenModel{

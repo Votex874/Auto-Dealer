@@ -17,7 +17,7 @@
         font-weight: bold;
         letter-spacing: 1px;
         font-size: 110%;
-        border-bottom: 4px dotted #DCDCDC; }
+        border-bottom: 10px solid #DCDCDC; }
       .modelContainer .containerConfiguration .configuration .finishStyle .engineText {
         display: block;
         height: 30px;
@@ -34,8 +34,6 @@
           flex-direction: row;
           margin: 15px 0;
           border-bottom: 3px solid #DCDCDC; }
-          .modelContainer .containerConfiguration .configuration .finishStyle .engineList .givenOption:nth-of-type(3) {
-            border-bottom: none; }
           .modelContainer .containerConfiguration .configuration .finishStyle .engineList .givenOption .item {
             margin-right: 10px;
             width: 60%; }
@@ -67,8 +65,6 @@
           flex-direction: row;
           margin: 15px 0;
           border-bottom: 3px solid #DCDCDC; }
-          .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption:nth-of-type(3) {
-            border-bottom: none; }
           .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .item {
             margin-right: 10px;
             width: 60%; }
@@ -79,6 +75,37 @@
             vertical-align: baseline;
             font-size: 100%; }
           .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .checkBox {
+            width: 8px;
+            height: 8px;
+            border: 1px solid #1a1a1a;
+            border-radius: 50%;
+            margin: 3px 10px 0 10px; }
+      .modelContainer .containerConfiguration .configuration .color .engineText {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 105%;
+        letter-spacing: 1px;
+        border-bottom: 3px dotted #DCDCDC; }
+      .modelContainer .containerConfiguration .configuration .color .engineList {
+        padding: 0; }
+        .modelContainer .containerConfiguration .configuration .color .engineList .givenOption {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          margin: 15px 0;
+          border-bottom: 3px solid #DCDCDC; }
+          .modelContainer .containerConfiguration .configuration .color .engineList .givenOption .item {
+            margin-right: 10px;
+            width: 60%; }
+          .modelContainer .containerConfiguration .configuration .color .engineList .givenOption .price {
+            width: 30%;
+            margin-right: 15px;
+            text-align: right;
+            vertical-align: baseline;
+            font-size: 100%; }
+          .modelContainer .containerConfiguration .configuration .color .engineList .givenOption .checkBox {
             width: 8px;
             height: 8px;
             border: 1px solid #1a1a1a;
