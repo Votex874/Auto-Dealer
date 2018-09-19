@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Engine from './Equipments/engineEq'
+import Style from './Equipments/styleEq'
 import './MainModel.css'
 
 class MainModel extends Component {
@@ -7,8 +8,21 @@ class MainModel extends Component {
         super(props);
 
 
-        const styleOptions = ['standard', 'sport', 's-line'];
         const colorOptions = ['black/white' , 'orange/silver'];
+        const styleOptions = [
+            {
+              item: 'standard',
+              price: '2200'
+            },
+            {
+                item: 'sport',
+                price: '4000'
+            },
+            {
+                item: 's-line',
+                price: '5300'
+            },
+        ];
         const engineOptions = [
             {
                 item: '140km 1600',
@@ -24,7 +38,10 @@ class MainModel extends Component {
             },
         ];
 
-        const mainArray = [false,false,false];
+
+        const engineArray = [false,false,false];
+        const styleArray = [false,false,false];
+        const sum = 0;
 
         const backgroundColor = '';
 
@@ -33,59 +50,91 @@ class MainModel extends Component {
             styleOptions,
             colorOptions,
             backgroundColor,
-            mainArray,
+            engineArray,
+            styleArray,
+            sum,
         }
     }
 
-    handleChecked = (i,price) => {
-        const {mainArray} = this.state;
-        console.log(price);
-        const array = mainArray;
+    handleEngineChecked = (i,price) => {
+        const {engineArray,sum} = this.state;
+        const array = engineArray;
 
         if(array[i] === false){
             array[i] = true;
+            this.setState({
+                engineArray: array,
+                sum: sum + Number(price),
+            });
         }else{
             array[i] = false
+            this.setState({
+                engineArray: array,
+                sum: sum - Number(price),
+            });
         }
+    };
+    handleStyleChecked = (i,price) => {
+        const {sum} = this.state;
+        let array = [false, false, false];
 
-        this.setState({
-            mainArray: array,
-        });
-        console.log(mainArray)
-
+        if(array[i] === false){
+            array[i] = true;
+            this.setState({
+                styleArray: array,
+                sum: sum + Number(price),
+            });
+        }else{
+            array[i] = false;
+            this.setState({
+                styleArray: array,
+                sum: sum - Number(price),
+            });
+        }
     };
 
-    makingOptions = () => {
-
-        const {engineOptions,mainArray} = this.state;
-
-        const array = mainArray;
-
+    makingEngineOptions = (array,options) => {
         return array.map((e,i) => {
             return (
                 <Engine key={i}
-                    onCheck={this.handleChecked}
-                    info={engineOptions[i]}
+                    onCheck={this.handleEngineChecked}
+                    info={options[i]}
                     checked={e}
                     index={i}
                 /> );
         })
-
+    };
+    makingStyleOptions = (array,options) => {
+        return array.map((e,i) => {
+            return (
+                <Style key={i}
+                        onCheck={this.handleStyleChecked}
+                        info={options[i]}
+                        checked={e}
+                        index={i}
+                /> );
+        })
     };
 
     render() {
+
+        const {engineOptions,styleOptions,styleArray, engineArray,sum} = this.state;
+
         return (
             <div className="modelContainer">
                 <div className='containerConfiguration'>
                     <div className="configuration">
                         <span className='configurationSpan'>Skonfiguruj własny model</span>
                         <div className="finishStyle">
-
+                            <span className='engineText'>Styl wnetrza</span>
+                            <ul className='engineList'>
+                                {this.makingStyleOptions(styleArray, styleOptions)}
+                            </ul>
                         </div>
                         <div className="engine">
                             <span className='engineText'>Moc/Pojemość Silnika</span>
                             <ul className='engineList'>
-                                {this.makingOptions(this.state.engineOptions)}
+                                {this.makingEngineOptions(engineArray, engineOptions)}
                             </ul>
                         </div>
                         <div className="color">
@@ -93,7 +142,7 @@ class MainModel extends Component {
                     </div>
                     <div className="givenModel">
                         <div className="imgModel">tutaj obrazek</div>
-                        <div className="sumEquipment">a tutaj informacja o kwocie</div>
+                        <div className="sumEquipment">a tutaj informacja o kwocie {sum}</div>
                     </div>
 
                 </div>
