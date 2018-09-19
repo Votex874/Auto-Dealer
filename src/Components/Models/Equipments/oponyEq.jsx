@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Style extends Component {
+class Wheels extends Component {
 
     handleChecked = (index,price) =>{
         if (typeof this.props.onCheck === 'function'){
@@ -37,4 +37,4 @@ class Style extends Component {
     }
 }
 
-export default Style;
+export default Wheels;

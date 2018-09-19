@@ -8,6 +8,20 @@ class MainModel extends Component {
     constructor(props){
         super(props);
 
+        const wheelsOptions = [
+            {
+                item: '185/65R18',
+                price: '0',
+            },
+            {
+                item: '195/65R19',
+                price: '2600',
+            },
+            {
+                item: '205/70R20',
+                price: '3900',
+            },
+        ];
 
         const colorOptions = [
             {
@@ -56,9 +70,11 @@ class MainModel extends Component {
         const engineArray = [true,false,false];
         const styleArray = [true,false,false];
         const colorArray = [true,false,false];
+        const wheelsArray = [true,false,false];
         const colorValue = 0;
         const styleValue = 0;
         const engineValue = 0;
+        const wheelsValue = 0;
         const sum = 0;
 
         const backgroundColor = '';
@@ -67,6 +83,7 @@ class MainModel extends Component {
             engineOptions,
             styleOptions,
             colorOptions,
+            wheelsOptions,
             backgroundColor,
             colorArray,
             colorValue,
@@ -74,6 +91,8 @@ class MainModel extends Component {
             engineValue,
             styleArray,
             styleValue,
+            wheelsArray,
+            wheelsValue,
             sum,
         }
     }
@@ -116,6 +135,19 @@ class MainModel extends Component {
         }
     };
 
+    handleWheelsChecked = (i,price) => {
+
+        let array = [false, false, false];
+
+        if(array[i] === false){
+            array[i] = true;
+            this.setState({
+                wheelsArray: array,
+                wheelsValue: Number(price),
+            });
+        }
+    };
+
     makingEngineOptions = (array,options) => {
         return array.map((e,i) => {
             return (
@@ -143,7 +175,19 @@ class MainModel extends Component {
         return array.map((e,i) => {
             return (
                 <Color key={i}
-                       onCheck={this.handleColorChecked()}
+                       onCheck={this.handleColorChecked}
+                       info={options[i]}
+                       checked={e}
+                       index={i}
+                /> );
+        })
+    };
+
+    makingWheelsOptions = (array,options) => {
+        return array.map((e,i) => {
+            return (
+                <Color key={i}
+                       onCheck={this.handleWheelsChecked}
                        info={options[i]}
                        checked={e}
                        index={i}
@@ -152,15 +196,15 @@ class MainModel extends Component {
     };
 
     countingSum = () => {
-      const { styleValue, engineValue} = this.state;
+      const { styleValue, engineValue, colorValue, wheelsValue} = this.state;
 
-      return ( Number(styleValue) + Number(engineValue) );
+      return ( Number(styleValue) + Number(engineValue) + Number(colorValue) + Number(wheelsValue));
 
     };
 
     render() {
 
-        const {engineOptions,styleOptions,styleArray, engineArray,colorArray, colorOptions} = this.state;
+        const {engineOptions,styleOptions,styleArray, engineArray,colorArray, colorOptions,wheelsArray, wheelsOptions} = this.state;
 
         return (
             <div className="modelContainer">
@@ -183,6 +227,12 @@ class MainModel extends Component {
                             <span className='engineText'>Color modelu</span>
                             <ul className='engineList'>
                                 {this.makingColorOptions(colorArray, colorOptions)}
+                            </ul>
+                        </div>
+                        <div className="wheels">
+                            <span className='engineText'>Rozmiar Opon</span>
+                            <ul className='engineList'>
+                                {this.makingWheelsOptions(wheelsArray, wheelsOptions)}
                             </ul>
                         </div>
                     </div>

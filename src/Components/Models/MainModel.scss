@@ -6,6 +6,7 @@
     text-align: center;
     font-size: 105%;
     letter-spacing: 1px;
+    padding-bottom: 3px;
     border-bottom: 3px dotted #DCDCDC;
   }
   .engineList{
@@ -49,6 +50,7 @@
     .configuration{
       width: 25%;
       border: 10px solid #DCDCDC;
+      border-bottom: 12px solid #DCDCDC;
       .configurationSpan{
         display: block;
         height: 40px;
@@ -67,6 +69,9 @@
       }
       .color{
         @include option('3')
+      }
+      .wheels{
+        @include option('4')
       }
     }
     .givenModel{

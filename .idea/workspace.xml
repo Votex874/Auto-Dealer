@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5450a092-d891-4ff4-9a14-ba4c66e2541c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" afterDir="false" />
@@ -31,11 +34,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="182" column="69" selection-start-line="182" selection-start-column="69" selection-end-line="182" selection-end-column="69" />
+                <state relative-caret-position="311">
+                  <caret line="200" column="97" selection-start-line="200" selection-start-column="97" selection-end-line="200" selection-end-column="97" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -43,11 +46,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="engineEq.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="oponyEq.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="612">
+                  <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="engineEq.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -55,8 +67,8 @@
           <file leaf-file-name="styleEq.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="31" selection-end-line="40" />
                 </state>
               </provider>
             </entry>
@@ -64,8 +76,8 @@
           <file leaf-file-name="kolorEq.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="583">
-                  <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -114,7 +126,7 @@
             <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="367">
-                  <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+                  <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -164,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" />
+        <option value="$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/MainModel.scss" />
         <option value="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" />
       </list>
@@ -280,12 +293,12 @@
       <workItem from="1536919546921" duration="3199000" />
       <workItem from="1537021288881" duration="13149000" />
       <workItem from="1537117392834" duration="13866000" />
-      <workItem from="1537348258814" duration="6201000" />
+      <workItem from="1537348258814" duration="7385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101326000" />
+    <option name="totallyTimeSpent" value="102510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="812" extended-state="0" />
@@ -332,13 +345,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Components/SectionOffert.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -700,41 +706,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="182" column="69" selection-start-line="182" selection-start-column="69" selection-end-line="182" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx">
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="612">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="200" column="97" selection-start-line="200" selection-start-column="97" selection-end-line="200" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

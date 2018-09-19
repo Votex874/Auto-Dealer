@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class Color extends Component {
-    constructor(props){
-        super(props);
-
-
-    }
 
     handleChecked = (index,price) =>{
         if (typeof this.props.onCheck === 'function'){
