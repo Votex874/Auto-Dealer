@@ -12,7 +12,7 @@ class MainModel extends Component {
         const styleOptions = [
             {
               item: 'standard',
-              price: '2200'
+              price: '0'
             },
             {
                 item: 'sport',
@@ -26,7 +26,7 @@ class MainModel extends Component {
         const engineOptions = [
             {
                 item: '140km 1600',
-                price: '4800',
+                price: '0',
             },
             {
                 item: '170km 1900',
@@ -39,8 +39,10 @@ class MainModel extends Component {
         ];
 
 
-        const engineArray = [false,false,false];
-        const styleArray = [false,false,false];
+        const engineArray = [true,false,false];
+        const styleArray = [true,false,false];
+        const styleValue = 0;
+        const engineValue = 0;
         const sum = 0;
 
         const backgroundColor = '';
@@ -51,44 +53,34 @@ class MainModel extends Component {
             colorOptions,
             backgroundColor,
             engineArray,
+            engineValue,
             styleArray,
+            styleValue,
             sum,
         }
     }
 
     handleEngineChecked = (i,price) => {
-        const {engineArray,sum} = this.state;
-        const array = engineArray;
+
+        let array = [false, false, false];
 
         if(array[i] === false){
             array[i] = true;
             this.setState({
                 engineArray: array,
-                sum: sum + Number(price),
-            });
-        }else{
-            array[i] = false
-            this.setState({
-                engineArray: array,
-                sum: sum - Number(price),
+                engineValue: Number(price),
             });
         }
     };
     handleStyleChecked = (i,price) => {
-        const {sum} = this.state;
+
         let array = [false, false, false];
 
         if(array[i] === false){
             array[i] = true;
             this.setState({
                 styleArray: array,
-                sum: sum + Number(price),
-            });
-        }else{
-            array[i] = false;
-            this.setState({
-                styleArray: array,
-                sum: sum - Number(price),
+                styleValue: Number(price),
             });
         }
     };
@@ -114,6 +106,13 @@ class MainModel extends Component {
                         index={i}
                 /> );
         })
+    };
+
+    countingSum = () => {
+      const { styleValue, engineValue} = this.state;
+
+      return ( Number(styleValue) + Number(engineValue) );
+
     };
 
     render() {
@@ -142,7 +141,7 @@ class MainModel extends Component {
                     </div>
                     <div className="givenModel">
                         <div className="imgModel">tutaj obrazek</div>
-                        <div className="sumEquipment">a tutaj informacja o kwocie {sum}</div>
+                        <div className="sumEquipment">a tutaj informacja o kwocie {this.countingSum()}</div>
                     </div>
 
                 </div>

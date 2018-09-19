@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5450a092-d891-4ff4-9a14-ba4c66e2541c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +30,8 @@
           <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+                <state relative-caret-position="85">
+                  <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -270,12 +266,12 @@
       <workItem from="1536919546921" duration="3199000" />
       <workItem from="1537021288881" duration="13149000" />
       <workItem from="1537117392834" duration="13866000" />
-      <workItem from="1537348258814" duration="2798000" />
+      <workItem from="1537348258814" duration="3448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97923000" />
+    <option name="totallyTimeSpent" value="98573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="812" extended-state="0" />
@@ -720,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
