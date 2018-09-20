@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5450a092-d891-4ff4-9a14-ba4c66e2541c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Models/A4.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/A4.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,20 +25,17 @@
           <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="428">
-                  <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="68">
+                  <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="A4.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="A4.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/A4.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="131" column="71" selection-start-line="131" selection-start-column="71" selection-end-line="131" selection-end-column="71" />
+                <state relative-caret-position="615">
+                  <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -44,11 +43,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+                <state relative-caret-position="51">
+                  <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                     <element signature="e#1401#1693#0" />
@@ -59,7 +58,6 @@
                     <element signature="e#2173#2453#0" />
                     <element signature="e#3394#3692#0" />
                     <element signature="e#3775#4069#0" />
-                    <element signature="e#2693#2858#0" />
                   </folding>
                 </state>
               </provider>
@@ -144,8 +142,8 @@
           <file leaf-file-name="MainModel.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="367">
-                  <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+                <state relative-caret-position="44">
+                  <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -194,10 +192,10 @@
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx" />
-        <option value="$PROJECT_DIR$/src/Components/Models/MainModel.scss" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/A4.jsx" />
+        <option value="$PROJECT_DIR$/src/Components/Models/MainModel.scss" />
+        <option value="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" />
       </list>
     </option>
   </component>
@@ -312,12 +310,12 @@
       <workItem from="1536919546921" duration="3199000" />
       <workItem from="1537021288881" duration="13149000" />
       <workItem from="1537117392834" duration="13866000" />
-      <workItem from="1537348258814" duration="8768000" />
+      <workItem from="1537348258814" duration="12464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103893000" />
+    <option name="totallyTimeSpent" value="107589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="812" extended-state="0" />
@@ -729,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -745,18 +736,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/A4.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="51">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#1401#1693#0" />
@@ -767,17 +772,6 @@
             <element signature="e#2173#2453#0" />
             <element signature="e#3394#3692#0" />
             <element signature="e#3775#4069#0" />
-            <element signature="e#2693#2858#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/A4.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="131" column="71" selection-start-line="131" selection-start-column="71" selection-end-line="131" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

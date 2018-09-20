@@ -22,10 +22,13 @@ class MainModel extends Component {
         const engineValue = 0;
         const wheelsValue = 0;
         const sum = 0;
+        const basicValue = this.props.basicValue;
 
         const backgroundColor = '';
+        const configurationNames = ['Styl wnętrza', 'Moc/Pojemość silnika', 'Color modelu','Rozmiar opon', 'Cena modelu'];
 
         this.state = {
+            configurationNames,
             engineOptions,
             styleOptions,
             colorOptions,
@@ -39,6 +42,7 @@ class MainModel extends Component {
             styleValue,
             wheelsArray,
             wheelsValue,
+            basicValue,
             sum,
         }
     }
@@ -138,16 +142,39 @@ class MainModel extends Component {
     };
 
     countingSum = () => {
-      const { styleValue, engineValue, colorValue, wheelsValue} = this.state;
+      const {basicValue, styleValue, engineValue, colorValue, wheelsValue} = this.state;
 
-      return ( Number(styleValue) + Number(engineValue) + Number(colorValue) + Number(wheelsValue));
+      return ( basicValue + Number(styleValue) + Number(engineValue) + Number(colorValue) + Number(wheelsValue) + ' zł');
 
     };
 
+    creatingConfigurationNames = array => {
+      return array.map((e,i) => {
+          return <div
+              className='configurationPart'
+              key={i}>
+              {e}
+          </div>
+      })
+    };
+    creatingConfigurationPrices = () => {
+        const { styleValue, engineValue, colorValue, wheelsValue } = this.state;
+        const prices = [styleValue, engineValue, colorValue, wheelsValue];
+        console.log(prices)
+        return prices.map((e,i) => {
+            return <div
+                className='configurationPart'
+                key={i}>
+                {e +' zł'}
+            </div>
+        })
+    };
+
+
     render() {
 
-        const {engineOptions,styleOptions,styleArray, engineArray,colorArray, colorOptions,wheelsArray, wheelsOptions} = this.state;
-
+        const {valueArray, configurationNames,engineOptions,styleOptions,styleArray, engineArray,colorArray, colorOptions,wheelsArray, wheelsOptions} = this.state;
+        console.log(this.state.valueArray);
         return (
             <div className="modelContainer">
                 <div className='containerConfiguration'>
@@ -180,7 +207,17 @@ class MainModel extends Component {
                     </div>
                     <div className="givenModel">
                         <div className="imgModel">tutaj obrazek</div>
-                        <div className="sumEquipment">a tutaj informacja o kwocie {this.countingSum()}</div>
+                        <div className="sumEquipment">
+                            <div className="nameOfConfiguration">
+                                {this.creatingConfigurationNames(configurationNames)}
+                            </div>
+                            <div className="priceOfConfiguration">
+                                {this.creatingConfigurationPrices()}
+                                <div className="configurationPart">
+                                    {this.countingSum()}
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>

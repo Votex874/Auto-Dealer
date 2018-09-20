@@ -5,6 +5,7 @@ class A4 extends Component {
     constructor(props) {
         super(props);
 
+        const basicValue = 140000;
         const configurationDetails = {
             wheelsOptions: [
                 {
@@ -65,6 +66,7 @@ class A4 extends Component {
         };
 
         this.state = {
+            basicValue,
             configurationDetails,
         }
 
@@ -73,10 +75,11 @@ class A4 extends Component {
 
 
     render() {
-           
+
         return (
             <MainModel
                 configurationInfo={this.state.configurationDetails}
+                basicValue={this.state.basicValue}
             />
 
         );

@@ -82,6 +82,57 @@
       .imgModel{
         height: 80%;
       }
+      .sumEquipment{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        .nameOfConfiguration{
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-direction: row;
+          .configurationPart{
+            width: 20%;
+            line-height: 70px;
+            border: 2px solid #DADADA;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 110%;
+            word-wrap: break-word;
+            &:nth-of-type(1){
+              border-left: none;
+            }
+            &:nth-of-type(5){
+              border-right: none;
+            }
+            &:nth-of-type(2){
+              line-height: 20px;
+              padding-top: 15px;
+            }
+          }
+        }
+        .priceOfConfiguration{
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-direction: row;
+          .configurationPart{
+            width: 20%;
+            line-height: 70px;
+            border: 2px solid #DADADA;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 110%;
+            word-wrap: break-word;
+            &:nth-of-type(1){
+              border-left: none;
+            }
+            &:nth-of-type(5){
+              border-right: none;
+            }
+          }
+        }
+      }
     }
   }
 }
