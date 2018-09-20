@@ -8,64 +8,10 @@ class MainModel extends Component {
     constructor(props){
         super(props);
 
-        const wheelsOptions = [
-            {
-                item: '185/65R18',
-                price: '0',
-            },
-            {
-                item: '195/65R19',
-                price: '2600',
-            },
-            {
-                item: '205/70R20',
-                price: '3900',
-            },
-        ];
-
-        const colorOptions = [
-            {
-                item: 'black/white',
-                price: '0',
-            },
-            {
-                item: 'orange/silver',
-                price: '2100',
-            },
-            {
-                item: 'red/aqua',
-                price: '3300',
-            },
-        ];
-        const styleOptions = [
-            {
-              item: 'standard',
-              price: '0'
-            },
-            {
-                item: 'sport',
-                price: '4000'
-            },
-            {
-                item: 's-line',
-                price: '5300'
-            },
-        ];
-        const engineOptions = [
-            {
-                item: '140km 1600',
-                price: '0',
-            },
-            {
-                item: '170km 1900',
-                price: '5500',
-            },
-            {
-                item: '235km 2200',
-                price: '7200',
-            },
-        ];
-
+        const wheelsOptions = this.props.configurationInfo.wheelsOptions;
+        const colorOptions = this.props.configurationInfo.colorOptions;
+        const styleOptions = this.props.configurationInfo.styleOptions;
+        const engineOptions = this.props.configurationInfo.engineOptions;
 
         const engineArray = [true,false,false];
         const styleArray = [true,false,false];
@@ -121,7 +67,6 @@ class MainModel extends Component {
             });
         }
     };
-
     handleColorChecked = (i,price) => {
 
         let array = [false, false, false];
@@ -134,7 +79,6 @@ class MainModel extends Component {
             });
         }
     };
-
     handleWheelsChecked = (i,price) => {
 
         let array = [false, false, false];
@@ -170,7 +114,6 @@ class MainModel extends Component {
                 /> );
         })
     };
-
     makingColorOptions = (array,options) => {
         return array.map((e,i) => {
             return (
@@ -182,7 +125,6 @@ class MainModel extends Component {
                 /> );
         })
     };
-
     makingWheelsOptions = (array,options) => {
         return array.map((e,i) => {
             return (

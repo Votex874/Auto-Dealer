@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5450a092-d891-4ff4-9a14-ba4c66e2541c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Models/A4.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/A4.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Models/MainModel.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,19 +23,43 @@
           <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="16" selection-end-line="56" />
+                <state relative-caret-position="428">
+                  <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
+          <file leaf-file-name="A4.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Components/Models/A4.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="200" column="97" selection-start-line="200" selection-start-column="97" selection-end-line="200" selection-end-column="97" />
+                <state relative-caret-position="416">
+                  <caret line="131" column="71" selection-start-line="131" selection-start-column="71" selection-end-line="131" selection-end-column="71" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainModel.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                    <element signature="e#1401#1693#0" />
+                    <element signature="e#1890#2182#0" />
+                    <element signature="e#2425#2670#0" />
+                    <element signature="e#2747#2992#0" />
+                    <element signature="e#1800#2080#0" />
+                    <element signature="e#2173#2453#0" />
+                    <element signature="e#3394#3692#0" />
+                    <element signature="e#3775#4069#0" />
+                    <element signature="e#2693#2858#0" />
                   </folding>
                 </state>
               </provider>
@@ -171,14 +190,14 @@
         <option value="$PROJECT_DIR$/src/Components/MainSection.scss" />
         <option value="$PROJECT_DIR$/src/Components/Header.scss" />
         <option value="$PROJECT_DIR$/src/Components/Header.jsx" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/Components/Models/A4.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/styleEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/kolorEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx" />
         <option value="$PROJECT_DIR$/src/Components/Models/MainModel.scss" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Components/Models/MainModel.jsx" />
+        <option value="$PROJECT_DIR$/src/Components/Models/A4.jsx" />
       </list>
     </option>
   </component>
@@ -293,12 +312,12 @@
       <workItem from="1536919546921" duration="3199000" />
       <workItem from="1537021288881" duration="13149000" />
       <workItem from="1537117392834" duration="13866000" />
-      <workItem from="1537348258814" duration="7385000" />
+      <workItem from="1537348258814" duration="8768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102510000" />
+    <option name="totallyTimeSpent" value="103893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="812" extended-state="0" />
@@ -332,7 +351,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -689,23 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/A4.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/engineEq.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -727,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -741,10 +736,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/Equipments/oponyEq.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Models/MainModel.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="200" column="97" selection-start-line="200" selection-start-column="97" selection-end-line="200" selection-end-column="97" />
+        <state relative-caret-position="340">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#1401#1693#0" />
+            <element signature="e#1890#2182#0" />
+            <element signature="e#2425#2670#0" />
+            <element signature="e#2747#2992#0" />
+            <element signature="e#1800#2080#0" />
+            <element signature="e#2173#2453#0" />
+            <element signature="e#3394#3692#0" />
+            <element signature="e#3775#4069#0" />
+            <element signature="e#2693#2858#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Models/A4.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="131" column="71" selection-start-line="131" selection-start-column="71" selection-end-line="131" selection-end-column="71" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
