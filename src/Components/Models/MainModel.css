@@ -1,5 +1,6 @@
 .modelContainer {
-  background-color: #EFEFF0; }
+  background-color: #EFEFF0;
+  transition: 2s; }
   .modelContainer .containerConfiguration {
     width: 1200px;
     height: 700px;
@@ -46,8 +47,8 @@
             vertical-align: baseline;
             font-size: 100%; }
           .modelContainer .containerConfiguration .configuration .finishStyle .engineList .givenOption .checkBox {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border: 1px solid #1a1a1a;
             border-radius: 50%;
             margin: 3px 10px 0 10px; }
@@ -78,8 +79,8 @@
             vertical-align: baseline;
             font-size: 100%; }
           .modelContainer .containerConfiguration .configuration .engine .engineList .givenOption .checkBox {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border: 1px solid #1a1a1a;
             border-radius: 50%;
             margin: 3px 10px 0 10px; }
@@ -110,8 +111,8 @@
             vertical-align: baseline;
             font-size: 100%; }
           .modelContainer .containerConfiguration .configuration .color .engineList .givenOption .checkBox {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border: 1px solid #1a1a1a;
             border-radius: 50%;
             margin: 3px 10px 0 10px; }
@@ -142,22 +143,27 @@
             vertical-align: baseline;
             font-size: 100%; }
           .modelContainer .containerConfiguration .configuration .wheels .engineList .givenOption .checkBox {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border: 1px solid #1a1a1a;
             border-radius: 50%;
             margin: 3px 10px 0 10px; }
     .modelContainer .containerConfiguration .givenModel {
       width: 75%;
-      background-color: blue;
+      background-color: #2B2B2E;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      border: 10px solid #DADADA; }
       .modelContainer .containerConfiguration .givenModel .imgModel {
         height: 80%; }
+        .modelContainer .containerConfiguration .givenModel .imgModel .configurationImg {
+          height: 100%;
+          width: 100%; }
       .modelContainer .containerConfiguration .givenModel .sumEquipment {
         height: 20%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        color: #fff; }
         .modelContainer .containerConfiguration .givenModel .sumEquipment .nameOfConfiguration {
           width: 100%;
           height: 50%;
@@ -182,7 +188,8 @@
           width: 100%;
           height: 50%;
           display: flex;
-          flex-direction: row; }
+          flex-direction: row;
+          color: #fff; }
           .modelContainer .containerConfiguration .givenModel .sumEquipment .priceOfConfiguration .configurationPart {
             width: 20%;
             line-height: 70px;

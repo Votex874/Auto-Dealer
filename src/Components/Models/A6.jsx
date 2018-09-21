@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import MainModel from './MainModel';
-import audiA4 from '../../imgAudiModels/audiA4FL.jpg'
+import audiA6 from '../../imgAudiModels/audiA6FL.jpg'
 
-class A4 extends Component {
+class A6 extends Component {
     constructor(props) {
         super(props);
 
-        const basicValue = 140000;
-        const urlImg = audiA4;
+        const basicValue = 174000;
+        const urlImg = audiA6;
         const configurationDetails = {
             wheelsOptions: [
                 {
@@ -44,11 +44,11 @@ class A4 extends Component {
                 },
                 {
                     item: 'sport',
-                    price: '4000'
+                    price: '5000'
                 },
                 {
                     item: 's-line',
-                    price: '5300'
+                    price: '7300'
                 },
             ],
             engineOptions: [
@@ -57,11 +57,11 @@ class A4 extends Component {
                     price: '0',
                 },
                 {
-                    item: '170km 1900',
+                    item: '1900km 2200',
                     price: '5500',
                 },
                 {
-                    item: '235km 2200',
+                    item: '268km 3000',
                     price: '7200',
                 },
             ]
@@ -90,4 +90,4 @@ class A4 extends Component {
     }
 }
 
-export default A4;
+export default A6;

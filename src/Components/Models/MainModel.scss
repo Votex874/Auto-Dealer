@@ -29,8 +29,9 @@
         font-size: 100%;
       }
       .checkBox{
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
+
         border: 1px solid #1a1a1a;
         border-radius: 50%;
         margin: 3px 10px 0 10px;
@@ -41,6 +42,7 @@
 
 .modelContainer{
   background-color: #EFEFF0;
+  transition: 2s;
   .containerConfiguration{
     width: 1200px;
     height: 700px;
@@ -76,16 +78,22 @@
     }
     .givenModel{
       width: 75%;
-      background-color: blue;
+      background-color: #2B2B2E;
       display: flex;
       flex-direction: column;
+      border: 10px solid #DADADA;
       .imgModel{
         height: 80%;
+        .configurationImg{
+          height: 100%;
+          width: 100%;
+        }
       }
       .sumEquipment{
         height: 20%;
         display: flex;
         flex-direction: column;
+        color: #fff;
         .nameOfConfiguration{
           width: 100%;
           height: 50%;
@@ -116,6 +124,7 @@
           height: 50%;
           display: flex;
           flex-direction: row;
+          color: #fff;
           .configurationPart{
             width: 20%;
             line-height: 70px;

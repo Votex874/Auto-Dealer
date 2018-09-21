@@ -147,7 +147,6 @@ class MainModel extends Component {
       return ( basicValue + Number(styleValue) + Number(engineValue) + Number(colorValue) + Number(wheelsValue) + ' zł');
 
     };
-
     creatingConfigurationNames = array => {
       return array.map((e,i) => {
           return <div
@@ -160,7 +159,6 @@ class MainModel extends Component {
     creatingConfigurationPrices = () => {
         const { styleValue, engineValue, colorValue, wheelsValue } = this.state;
         const prices = [styleValue, engineValue, colorValue, wheelsValue];
-        console.log(prices)
         return prices.map((e,i) => {
             return <div
                 className='configurationPart'
@@ -172,9 +170,8 @@ class MainModel extends Component {
 
 
     render() {
+        const {configurationNames,engineOptions,styleOptions,styleArray, engineArray,colorArray, colorOptions,wheelsArray, wheelsOptions} = this.state;
 
-        const {valueArray, configurationNames,engineOptions,styleOptions,styleArray, engineArray,colorArray, colorOptions,wheelsArray, wheelsOptions} = this.state;
-        console.log(this.state.valueArray);
         return (
             <div className="modelContainer">
                 <div className='containerConfiguration'>
@@ -206,7 +203,11 @@ class MainModel extends Component {
                         </div>
                     </div>
                     <div className="givenModel">
-                        <div className="imgModel">tutaj obrazek</div>
+                        <div className="imgModel">
+                            <img className='configurationImg'
+                                 src={this.props.image}
+                                 alt="audi"/>
+                        </div>
                         <div className="sumEquipment">
                             <div className="nameOfConfiguration">
                                 {this.creatingConfigurationNames(configurationNames)}

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import MainModel from './MainModel';
-import audiA4 from '../../imgAudiModels/audiA4FL.jpg'
+import audiQ3 from '../../imgAudiModels/audiQ3FL.jpg'
 
-class A4 extends Component {
+class Q3 extends Component {
     constructor(props) {
         super(props);
 
         const basicValue = 140000;
-        const urlImg = audiA4;
+        const urlImg = audiQ3;
         const configurationDetails = {
             wheelsOptions: [
                 {
@@ -90,4 +90,4 @@ class A4 extends Component {
     }
 }
 
-export default A4;
+export default Q3;
