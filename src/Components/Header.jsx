@@ -78,7 +78,6 @@ class Header extends Component {
                                 Modele
                                 <div
                                     className={showOptions}>
-                                    <div className="invisible" />
                                     <HashRouter>
                                     <ul className='listOfModels'>
                                         {this.createLinkArray()}

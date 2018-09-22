@@ -7,6 +7,8 @@ class Contact extends Component {
         super(props);
 
 
+
+
         this.state = {
             count: 2,
             inputName: '',
@@ -43,68 +45,72 @@ class Contact extends Component {
         }
     };
 
-    handleValidation = () =>{
-        this.handleInputName = (event ) => {
-            if(event.target.value.length < 8) {
-                this.setState({
-                    inputBorderName: {
-                        borderBottom: '1px solid red'
-                    },
-                    inputNameAttention: " twoje imie powinno zawierać więcej niż 8 znaków",
-                    inputName: event.target.value,
-                })
-            }else{
-                this.setState({
-                    inputBorderName: {
-                        borderBottom: '1px solid #2E3EFF'
-                    },
-                    inputNameAttention: "",
-                    inputName: event.target.value,
-                })
-            }
-        };
-        this.handleInputEmail = (event ) => {
-
-            if(event.target.value.indexOf('@') <= -1){
-                this.setState({
-                    inputBorderEmail: {
-                        borderBottom: '1px solid red'
-                    },
-                    inputEmailAttention: 'e-mail nieprawidłowy brakuje znaku @',
-                    inputEmail: event.target.value,
-                })
-            }else{
-                this.setState({
-                    inputBorderEmail: {
-                        borderBottom: '1px solid #2E3EFF'
-                    },
-                    inputEmailAttention: '',
-                    inputEmail: event.target.value,
-                });
-                console.log('jest @')
-            }
-        };
-        this.handleTextarea = (event ) => {
-            if(event.target.value.length <= 0) {
-                this.setState({
-                    inputBorderTextarea: {
-                        borderBottom: '1px solid red'
-                    },
-                    inputTextareaAttention: ' nie powinna być pusta',
-                    inputTextarea: event.target.value,
-                })
-            }else{
-                this.setState({
-                    inputBorderTextarea: {
-                        borderBottom: '1px solid #2E3EFF'
-                    },
-                    inputTextareaAttention: '',
-                    inputTextarea: event.target.value,
-                })
-            }
-        };
-
+    handleInputName = (event ) => {
+        if(event.target.value.length < 8) {
+            this.setState({
+                inputBorderName: {
+                    borderBottom: '1px solid red'
+                },
+                inputNameAttention: " twoje imie powinno zawierać więcej niż 8 znaków",
+                inputName: event.target.value,
+                inputNameT: false,
+            })
+        }else{
+            this.setState({
+                inputBorderName: {
+                    borderBottom: '1px solid #2E3EFF'
+                },
+                inputNameAttention: "",
+                inputName: event.target.value,
+                inputNameT: true,
+            })
+        }
     };
+    handleInputEmail = (event ) => {
+
+        if(event.target.value.indexOf('@') <= -1){
+            this.setState({
+                inputBorderEmail: {
+                    borderBottom: '1px solid red'
+                },
+                inputEmailAttention: 'e-mail nieprawidłowy brakuje znaku @',
+                inputEmail: event.target.value,
+                inputEmailT: false,
+            })
+        }else{
+            this.setState({
+                inputBorderEmail: {
+                    borderBottom: '1px solid #2E3EFF'
+                },
+                inputEmailAttention: '',
+                inputEmail: event.target.value,
+                inputEmailT: true,
+            });
+        }
+    };
+    handleTextarea = (event ) => {
+        if(event.target.value.length <= 0) {
+            this.setState({
+                inputBorderTextarea: {
+                    borderBottom: '1px solid red'
+                },
+                inputTextareaAttention: ' nie powinna być pusta',
+                inputTextarea: event.target.value,
+                inputTextareaT: false,
+            })
+        }else{
+            this.setState({
+                inputBorderTextarea: {
+                    borderBottom: '1px solid #2E3EFF'
+                },
+                inputTextareaAttention: '',
+                inputTextarea: event.target.value,
+                inputTextareaT: true,
+            })
+        }
+    };
+
+
 
     render() {
         const {
@@ -116,7 +122,7 @@ class Contact extends Component {
             inputTextarea,
             inputNameAttention,
             inputEmailAttention,
-            inputTextareaAttention
+            inputTextareaAttention,
             } = this.state;
 
         return (
@@ -133,7 +139,7 @@ class Contact extends Component {
                     </div>
                     <div className="contactDetails">
                         <div className='containerForm'>
-                            <form onSubmit={this.handleValidation()}>
+                            <form >
                                 <label>
                                     Imie: {inputNameAttention}
                                     <input
@@ -162,7 +168,7 @@ class Contact extends Component {
                                         placeholder='Wiadomosc'
                                         value={inputTextarea}
                                         onChange={this.handleTextarea}/>
-                                    <input type="submit" value="Wyslij" disabled={true}/>
+                                    <input type="submit" value="Wyslij"/>
                                 </label>
                             </form>
                         </div>

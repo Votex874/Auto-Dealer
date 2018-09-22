@@ -9,14 +9,14 @@ class SectionOffert extends Component {
     constructor(props){
         super(props);
 
-        let offertArray = ['Gotówka', 'Leasing', 'Abonament'];
+        let offertArray = ['Gotowka', 'Leasing', 'Abonament'];
         let indexOffert = <Gotowka/>;
 
         this.state = {
             offertArray,
             pseudoNumber: 0,
             indexOffert,
-            Gotówka: {
+            Gotowka: {
                 color: 'white',
                 borderBottom: '2px dotted #white',
             },
@@ -32,8 +32,8 @@ class SectionOffert extends Component {
     }
 
     creatingOfferts = () => {
-      const { offertArray,Gotówka,Leasing,Abonament } = this.state;
-      const arrayStyle = [Gotówka, Leasing, Abonament];
+      const { offertArray,Gotowka,Leasing,Abonament } = this.state;
+      const arrayStyle = [Gotowka, Leasing, Abonament];
 
       const array = offertArray.map((e,i) => {
           return <li style={arrayStyle[i]} key={i} onClick={() => this.handleClickOffert(i)}>{e}</li>
@@ -53,7 +53,7 @@ class SectionOffert extends Component {
                     color: 'white',
                     borderBottom: '2px dotted white',
                 },
-                Gotówka: {
+                Gotowka: {
                     color: 'white',
                     borderBottom: '2px dotted white',
                 },
@@ -69,7 +69,7 @@ class SectionOffert extends Component {
                     color: '#2E3EFF',
                     borderBottom: '2px dotted #2E3EFF',
                 },
-                Gotówka: {
+                Gotowka: {
                     color: 'white',
                     borderBottom: '2px dotted white',
                 },
@@ -85,7 +85,7 @@ class SectionOffert extends Component {
                     color: 'white',
                     borderBottom: '2px dotted white',
                 },
-                Gotówka: {
+                Gotowka: {
                     color: '#2E3EFF',
                     borderBottom: '2px dotted #2E3EFF',
                 },
