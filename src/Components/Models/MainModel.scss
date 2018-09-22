@@ -1,5 +1,5 @@
 @mixin option($url){
-  .engineText{
+  .text{
     display: block;
     height: 30px;
     line-height: 30px;
@@ -7,7 +7,8 @@
     font-size: 105%;
     letter-spacing: 1px;
     padding-bottom: 3px;
-    border-bottom: 3px dotted #DCDCDC;
+    border-bottom: 3px dotted #2B2B2E;
+    font-weight: bold;
   }
   .engineList{
     padding: 0;
@@ -16,7 +17,7 @@
       display: flex;
       flex-direction: row;
       margin: 15px 0;
-      border-bottom: 3px solid #DCDCDC;
+      border-bottom: 3px solid #2B2B2E;
       .item{
         margin-right: 10px;
         width: 60%;
@@ -41,27 +42,29 @@
 }
 
 .modelContainer{
-  background-color: #EFEFF0;
+  background-color: #fff;
   transition: 2s;
   .containerConfiguration{
     width: 1200px;
-    height: 700px;
+    height: 690px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    border: 10px solid #2B2B2E;
+    border-top: none;
     .configuration{
       width: 25%;
-      border: 10px solid #DCDCDC;
-      border-bottom: 12px solid #DCDCDC;
+      border-right: 10px solid #2B2B2E;
       .configurationSpan{
         display: block;
         height: 40px;
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;
         font-weight: bold;
         letter-spacing: 1px;
         font-size: 110%;
-        border-bottom: 10px solid #DCDCDC;
+        border-bottom: 10px solid #2B2B2E;
+        margin-bottom: 15px;
       }
       .finishStyle{
         @include option('1')
@@ -78,19 +81,51 @@
     }
     .givenModel{
       width: 75%;
-      background-color: #2B2B2E;
+      background-color: #727373;
       display: flex;
       flex-direction: column;
-      border: 10px solid #DADADA;
       .imgModel{
-        height: 80%;
+        height: 560px;
+        position: relative;
         .configurationImg{
           height: 100%;
           width: 100%;
         }
+        .orderModel{
+          position: absolute;
+          width: 200px;
+          display: flex;
+          flex-direction: row;
+          top: 490px;
+          left: 680px;
+          span{
+            width: 40%;
+            font-weight: bold;
+            color: #2B2B2E;
+            font-size: 200%;
+            padding-top: 2px;
+            letter-spacing: 2px;
+          }
+          button{
+            border: none;
+            width: 140px;
+            height: 40px;
+            font-size: 120%;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            background-color: #2B2B2E;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+              color: #2E3EFF;
+              background-color: #DADADA;
+            }
+          }
+        }
       }
       .sumEquipment{
-        height: 20%;
+        height: 140px;
         display: flex;
         flex-direction: column;
         color: #fff;
@@ -102,7 +137,8 @@
           .configurationPart{
             width: 20%;
             line-height: 70px;
-            border: 2px solid #DADADA;
+            border: 2px solid #fff;
+            border-top: none;
             text-align: center;
             letter-spacing: 1px;
             font-size: 110%;
@@ -120,15 +156,16 @@
           }
         }
         .priceOfConfiguration{
-          width: 100%;
-          height: 50%;
           display: flex;
           flex-direction: row;
+          width: 100%;
+          height: 70px;
           color: #fff;
           .configurationPart{
             width: 20%;
             line-height: 70px;
-            border: 2px solid #DADADA;
+            border: 2px solid #fff;
+            border-bottom: none;
             text-align: center;
             letter-spacing: 1px;
             font-size: 110%;

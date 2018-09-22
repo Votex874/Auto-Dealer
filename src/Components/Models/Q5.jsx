@@ -6,7 +6,7 @@ class Q5 extends Component {
     constructor(props) {
         super(props);
 
-        const basicValue = 140000;
+        const basicValue = 183000;
         const urlImg = audiQ5;
         const configurationDetails = {
             wheelsOptions: [
@@ -29,12 +29,12 @@ class Q5 extends Component {
                     price: '0',
                 },
                 {
-                    item: 'orange/silver',
-                    price: '2100',
+                    item: 'red',
+                    price: '4500',
                 },
                 {
-                    item: 'red/aqua',
-                    price: '3300',
+                    item: 'orange',
+                    price: '6600',
                 },
             ],
             styleOptions: [
@@ -44,11 +44,11 @@ class Q5 extends Component {
                 },
                 {
                     item: 'sport',
-                    price: '4000'
+                    price: '3300'
                 },
                 {
                     item: 's-line',
-                    price: '5300'
+                    price: '4800'
                 },
             ],
             engineOptions: [
@@ -57,12 +57,12 @@ class Q5 extends Component {
                     price: '0',
                 },
                 {
-                    item: '170km 1900',
-                    price: '5500',
+                    item: '190km 1900',
+                    price: '8400',
                 },
                 {
-                    item: '235km 2200',
-                    price: '7200',
+                    item: '220km 2200',
+                    price: '9900',
                 },
             ]
         };
@@ -84,6 +84,7 @@ class Q5 extends Component {
                 configurationInfo={configurationDetails}
                 basicValue={basicValue}
                 image={urlImg}
+                model={'Q5'}
             />
 
         );

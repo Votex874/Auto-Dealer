@@ -6,7 +6,7 @@ class A8 extends Component {
     constructor(props) {
         super(props);
 
-        const basicValue = 140000;
+        const basicValue = 280000;
         const urlImg = audiA8;
         const configurationDetails = {
             wheelsOptions: [
@@ -29,12 +29,12 @@ class A8 extends Component {
                     price: '0',
                 },
                 {
-                    item: 'orange/silver',
-                    price: '2100',
+                    item: 'silver',
+                    price: '5700',
                 },
                 {
-                    item: 'red/aqua',
-                    price: '3300',
+                    item: 'gold',
+                    price: '8800',
                 },
             ],
             styleOptions: [
@@ -44,25 +44,25 @@ class A8 extends Component {
                 },
                 {
                     item: 'sport',
-                    price: '4000'
+                    price: '7000'
                 },
                 {
                     item: 's-line',
-                    price: '5300'
+                    price: '15300'
                 },
             ],
             engineOptions: [
                 {
-                    item: '140km 1600',
+                    item: '240km 2400',
                     price: '0',
                 },
                 {
-                    item: '170km 1900',
-                    price: '5500',
+                    item: '320km 3000',
+                    price: '11000',
                 },
                 {
-                    item: '235km 2200',
-                    price: '7200',
+                    item: '411km 4200',
+                    price: '13200',
                 },
             ]
         };
@@ -84,6 +84,8 @@ class A8 extends Component {
                 configurationInfo={configurationDetails}
                 basicValue={basicValue}
                 image={urlImg}
+                model={'A8'}
+
             />
 
         );

@@ -6,7 +6,7 @@ class Q3 extends Component {
     constructor(props) {
         super(props);
 
-        const basicValue = 140000;
+        const basicValue = 132000;
         const urlImg = audiQ3;
         const configurationDetails = {
             wheelsOptions: [
@@ -44,11 +44,11 @@ class Q3 extends Component {
                 },
                 {
                     item: 'sport',
-                    price: '4000'
+                    price: '2900'
                 },
                 {
                     item: 's-line',
-                    price: '5300'
+                    price: '4200'
                 },
             ],
             engineOptions: [
@@ -61,8 +61,8 @@ class Q3 extends Component {
                     price: '5500',
                 },
                 {
-                    item: '235km 2200',
-                    price: '7200',
+                    item: '210km 2200',
+                    price: '6200',
                 },
             ]
         };
@@ -84,6 +84,7 @@ class Q3 extends Component {
                 configurationInfo={configurationDetails}
                 basicValue={basicValue}
                 image={urlImg}
+                model={'Q3'}
             />
 
         );

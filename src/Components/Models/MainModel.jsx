@@ -178,25 +178,25 @@ class MainModel extends Component {
                     <div className="configuration">
                         <span className='configurationSpan'>Skonfiguruj własny model</span>
                         <div className="finishStyle">
-                            <span className='engineText'>Styl wnetrza</span>
+                            <span className='text'>Styl wnetrza</span>
                             <ul className='engineList'>
                                 {this.makingStyleOptions(styleArray, styleOptions)}
                             </ul>
                         </div>
                         <div className="engine">
-                            <span className='engineText'>Moc/Pojemość Silnika</span>
+                            <span className='text'>Moc/Pojemość Silnika</span>
                             <ul className='engineList'>
                                 {this.makingEngineOptions(engineArray, engineOptions)}
                             </ul>
                         </div>
                         <div className="color">
-                            <span className='engineText'>Color modelu</span>
+                            <span className='text'>Color modelu</span>
                             <ul className='engineList'>
                                 {this.makingColorOptions(colorArray, colorOptions)}
                             </ul>
                         </div>
                         <div className="wheels">
-                            <span className='engineText'>Rozmiar Opon</span>
+                            <span className='text'>Rozmiar Opon</span>
                             <ul className='engineList'>
                                 {this.makingWheelsOptions(wheelsArray, wheelsOptions)}
                             </ul>
@@ -207,6 +207,10 @@ class MainModel extends Component {
                             <img className='configurationImg'
                                  src={this.props.image}
                                  alt="audi"/>
+                            <div className='orderModel'>
+                                <span>{this.props.model}</span>
+                                <button>Wybieram</button>
+                            </div>
                         </div>
                         <div className="sumEquipment">
                             <div className="nameOfConfiguration">

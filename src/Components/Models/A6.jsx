@@ -71,6 +71,7 @@ class A6 extends Component {
             basicValue,
             configurationDetails,
             urlImg,
+
         }
 
     }
@@ -84,6 +85,7 @@ class A6 extends Component {
                 configurationInfo={configurationDetails}
                 basicValue={basicValue}
                 image={urlImg}
+                model={'A6'}
             />
 
         );

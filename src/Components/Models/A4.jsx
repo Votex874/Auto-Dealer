@@ -84,6 +84,7 @@ class A4 extends Component {
                 configurationInfo={configurationDetails}
                 basicValue={basicValue}
                 image={urlImg}
+                model={'A4'}
             />
 
         );

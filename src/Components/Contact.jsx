@@ -43,69 +43,68 @@ class Contact extends Component {
         }
     };
 
-    handleInputName = (event ) => {
-        if(event.target.value.length < 8) {
-            this.setState({
-                inputBorderName: {
-                    borderBottom: '1px solid red'
-                },
-                inputNameAttention: " twoje imie powinno zawierać więcej niż 8 znaków",
-                inputName: event.target.value,
-            })
-        }else{
-            this.setState({
-                inputBorderName: {
-                    borderBottom: '1px solid #2E3EFF'
-                },
-                inputNameAttention: "",
-                inputName: event.target.value,
-            })
-        }
+    handleValidation = () =>{
+        this.handleInputName = (event ) => {
+            if(event.target.value.length < 8) {
+                this.setState({
+                    inputBorderName: {
+                        borderBottom: '1px solid red'
+                    },
+                    inputNameAttention: " twoje imie powinno zawierać więcej niż 8 znaków",
+                    inputName: event.target.value,
+                })
+            }else{
+                this.setState({
+                    inputBorderName: {
+                        borderBottom: '1px solid #2E3EFF'
+                    },
+                    inputNameAttention: "",
+                    inputName: event.target.value,
+                })
+            }
+        };
+        this.handleInputEmail = (event ) => {
+
+            if(event.target.value.indexOf('@') <= -1){
+                this.setState({
+                    inputBorderEmail: {
+                        borderBottom: '1px solid red'
+                    },
+                    inputEmailAttention: 'e-mail nieprawidłowy brakuje znaku @',
+                    inputEmail: event.target.value,
+                })
+            }else{
+                this.setState({
+                    inputBorderEmail: {
+                        borderBottom: '1px solid #2E3EFF'
+                    },
+                    inputEmailAttention: '',
+                    inputEmail: event.target.value,
+                });
+                console.log('jest @')
+            }
+        };
+        this.handleTextarea = (event ) => {
+            if(event.target.value.length <= 0) {
+                this.setState({
+                    inputBorderTextarea: {
+                        borderBottom: '1px solid red'
+                    },
+                    inputTextareaAttention: ' nie powinna być pusta',
+                    inputTextarea: event.target.value,
+                })
+            }else{
+                this.setState({
+                    inputBorderTextarea: {
+                        borderBottom: '1px solid #2E3EFF'
+                    },
+                    inputTextareaAttention: '',
+                    inputTextarea: event.target.value,
+                })
+            }
+        };
+
     };
-
-    handleInputEmail = (event ) => {
-
-        if(event.target.value.indexOf('@') <= -1){
-            console.log(this.state.inputEmail);
-            this.setState({
-                inputBorderEmail: {
-                    borderBottom: '1px solid red'
-                },
-                inputEmailAttention: 'e-mail nieprawidłowy brakuje znaku @',
-                inputEmail: event.target.value,
-            })
-        }else{
-            this.setState({
-                inputBorderEmail: {
-                    borderBottom: '1px solid #2E3EFF'
-                },
-                inputEmailAttention: '',
-                inputEmail: event.target.value,
-            });
-            console.log('jest @')
-        }
-    };
-
-    handleTextarea = (event ) => {
-        if(event.target.value.length <= 0) {
-            this.setState({
-                inputBorderTextarea: {
-                    borderBottom: '1px solid red'
-                },
-                inputTextareaAttention: ' nie powinna być pusta',
-                inputTextarea: event.target.value,
-            })
-        }else{
-            this.setState({
-                inputBorderTextarea: {
-                    borderBottom: '1px solid #2E3EFF'
-                },
-                inputTextareaAttention: '',
-                inputTextarea: event.target.value,
-            })
-        }
-    };
-
 
     render() {
         const {
@@ -134,7 +133,7 @@ class Contact extends Component {
                     </div>
                     <div className="contactDetails">
                         <div className='containerForm'>
-                            <form>
+                            <form onSubmit={this.handleValidation()}>
                                 <label>
                                     Imie: {inputNameAttention}
                                     <input
@@ -163,7 +162,7 @@ class Contact extends Component {
                                         placeholder='Wiadomosc'
                                         value={inputTextarea}
                                         onChange={this.handleTextarea}/>
-                                    <input type="submit" value="Wyslij"/>
+                                    <input type="submit" value="Wyslij" disabled={true}/>
                                 </label>
                             </form>
                         </div>
