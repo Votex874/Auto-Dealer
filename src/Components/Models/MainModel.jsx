@@ -4,6 +4,7 @@ import Style from './Equipments/styleEq'
 import Color from './Equipments/kolorEq'
 import './MainModel.css'
 
+
 class MainModel extends Component {
     constructor(props){
         super(props);
@@ -167,6 +168,8 @@ class MainModel extends Component {
             </div>
         })
     };
+
+
 
 
     render() {

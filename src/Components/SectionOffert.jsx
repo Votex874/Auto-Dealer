@@ -17,8 +17,8 @@ class SectionOffert extends Component {
             pseudoNumber: 0,
             indexOffert,
             Gotowka: {
-                color: 'white',
-                borderBottom: '2px dotted #white',
+                color: '#2E3EFF',
+                borderBottom: '2px dotted #2E3EFF',
             },
             Leasing: {
                 color: '',
